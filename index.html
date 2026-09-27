@@ -6,1158 +6,733 @@
 
 <title>Apex Legends Accounts for Sale | APEXCHEAP</title>
 
-<meta
-    name="description"
-    content="Browse Apex Legends accounts for sale at APEXCHEAP. Predator accounts, Mythics and rare skins."
->
+<meta name="description"
+content="Browse Apex Legends accounts for sale at APEXCHEAP. Predator accounts, Mythics and rare skins.">
 
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#080806">
+<meta name="theme-color" content="#090806">
 
-<link
-    rel="canonical"
-    href="https://mereksss.github.io/apexcheap/"
->
+<link rel="canonical" href="https://mereksss.github.io/apexcheap/">
 
-<!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
->
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================================================
-   RESET / COLORS
-========================================================= */
+/* =========================
+   BASE
+========================= */
 
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 :root{
-
-    --black:#080806;
-    --black2:#0d0c0a;
-    --black3:#14110e;
-
-    --paper:#e8dcc6;
-    --paper2:#c9b796;
-
-    --red:#e21a0c;
+    --black:#080705;
+    --black2:#0e0c09;
+    --panel:#12100c;
+    --paper:#e7d9bf;
+    --paper2:#c8b38e;
+    --red:#e31b0c;
     --red2:#ff321c;
-    --red-dark:#720b05;
-
-    --orange:#ff7616;
-    --gold:#ffae45;
-
-    --white:#f3ede4;
-    --muted:#a99e90;
-
-    --border:#403226;
+    --darkred:#710a04;
+    --orange:#ff7417;
+    --gold:#ffad43;
+    --white:#f3eadf;
+    --muted:#a99d8e;
+    --border:#49392b;
 }
-
 
 html{
     scroll-behavior:smooth;
 }
 
-
 body{
-
-    min-height:100vh;
-
-    background:
-
-        radial-gradient(
-            circle at 82% 15%,
-            rgba(205,30,0,.14),
-            transparent 28%
-        ),
-
-        radial-gradient(
-            circle at 10% 62%,
-            rgba(255,105,0,.07),
-            transparent 27%
-        ),
-
-        var(--black);
-
+    background:#080705;
     color:var(--white);
-
     font-family:"Oswald",Arial,sans-serif;
-
     overflow-x:hidden;
 }
-
 
 a{
     color:inherit;
     text-decoration:none;
 }
 
-
 .container{
-
-    width:min(
-        1180px,
-        calc(100% - 36px)
-    );
-
+    width:min(1180px,calc(100% - 36px));
     margin:auto;
 }
 
 
-/* =========================================================
-   HEADER
-========================================================= */
+/* =========================
+   NAV
+========================= */
 
 header{
-
     height:76px;
-
+    background:rgba(8,7,5,.96);
+    border-bottom:1px solid #392b20;
     position:relative;
-
     z-index:100;
-
-    background:
-        rgba(8,8,6,.94);
-
-    border-bottom:
-        1px solid #35291f;
-
-    backdrop-filter:
-        blur(15px);
 }
-
 
 nav{
-
     height:100%;
-
     display:flex;
-
     align-items:center;
-
-    justify-content:
-        space-between;
+    justify-content:space-between;
 }
 
-
-/* =========================================================
-   BRAND
-========================================================= */
-
 .brand{
-
     display:flex;
-
     align-items:center;
-
     gap:13px;
 }
 
-
-.logo-frame{
-
+.logo{
     width:52px;
     height:52px;
-
-    overflow:hidden;
-
-    background:
-        var(--paper);
-
-    border:
-        1px solid #8b795e;
-
-    transform:
-        rotate(-2deg);
-
-    box-shadow:
-        4px 4px 0
-        var(--red-dark);
-}
-
-
-.logo-frame img{
-
-    width:100%;
-    height:100%;
-
     object-fit:cover;
-
-    object-position:
-        center 34%;
+    object-position:center 34%;
+    border:1px solid #8b795f;
+    background:var(--paper);
+    transform:rotate(-2deg);
+    box-shadow:4px 4px 0 var(--darkred);
 }
 
-
-.brand-name{
-
-    font-family:
-        "Anton",
-        sans-serif;
-
+.brand-text{
+    font-family:"Anton",sans-serif;
     font-size:21px;
-
-    letter-spacing:
-        1.3px;
-
-    text-transform:
-        uppercase;
+    letter-spacing:1px;
 }
 
-
-.brand-name span{
-
-    color:var(--red);
+.brand-text span{
+    color:var(--red2);
 }
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
 
 .nav-right{
-
     display:flex;
-
     align-items:center;
-
-    gap:29px;
+    gap:27px;
 }
-
 
 .nav-link{
-
-    color:#b4aa9e;
-
     font-size:12px;
-
     font-weight:600;
-
-    letter-spacing:
-        1.4px;
-
-    text-transform:
-        uppercase;
-
-    transition:.2s;
+    letter-spacing:1.3px;
+    color:#b5aa9c;
 }
-
 
 .nav-link:hover{
-
-    color:white;
+    color:#fff;
 }
 
 
-/* =========================================================
+/* =========================
    BUTTONS
-========================================================= */
+========================= */
 
-.red-button,
-.dark-button{
-
+.btn{
     display:inline-block;
-
     position:relative;
-
     overflow:hidden;
 
-    padding:
-        14px 24px;
-
-    font-family:
-        "Oswald",
-        sans-serif;
+    padding:14px 24px;
 
     font-size:12px;
-
     font-weight:700;
+    letter-spacing:1px;
 
-    letter-spacing:
-        1.2px;
-
-    text-transform:
-        uppercase;
+    text-transform:uppercase;
 
     transition:
         transform .2s,
-        border-color .2s,
         box-shadow .2s;
 }
 
-
-.red-button{
-
-    color:white;
-
-    background:
-
-        linear-gradient(
-            115deg,
-            #af0c06,
-            var(--red),
-            var(--red2)
-        );
-
-    border:
-        1px solid #ff493a;
-
-    box-shadow:
-        0 8px 28px
-        rgba(220,25,0,.23);
+.btn-red{
+    background:linear-gradient(110deg,#ad0c06,var(--red),var(--red2));
+    border:1px solid #ff4b3c;
+    box-shadow:0 8px 28px rgba(220,30,0,.23);
 }
 
-
-/* BUTTON SHINE */
-
-.red-button::before{
-
+.btn-red::after{
     content:"";
-
     position:absolute;
-
-    top:-30px;
-    left:-70px;
 
     width:35px;
-    height:100px;
+    height:120px;
 
-    background:
-        rgba(255,255,255,.18);
+    top:-45px;
+    left:-80px;
 
-    transform:
-        rotate(25deg);
+    background:rgba(255,255,255,.23);
 
-    transition:
-        left .45s;
+    transform:rotate(25deg);
+
+    transition:left .45s ease;
+}
+
+.btn-red:hover::after{
+    left:140%;
+}
+
+.btn-red:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 35px rgba(255,45,10,.35);
+}
+
+.btn-dark{
+    background:#13110e;
+    border:1px solid #5a4838;
+}
+
+.btn-dark:hover{
+    transform:translateY(-3px);
 }
 
 
-.red-button:hover::before{
-
-    left:130%;
-}
-
-
-.red-button:hover{
-
-    transform:
-        translateY(-2px);
-
-    box-shadow:
-        0 11px 35px
-        rgba(255,40,10,.32);
-}
-
-
-.dark-button{
-
-    color:var(--paper);
-
-    background:
-        rgba(15,14,12,.88);
-
-    border:
-        1px solid #574839;
-}
-
-
-.dark-button:hover{
-
-    transform:
-        translateY(-2px);
-
-    border-color:
-        #94795e;
-}
-
-
-/* =========================================================
+/* =========================
    HERO
-========================================================= */
+========================= */
 
 .hero{
-
     min-height:690px;
-
+    position:relative;
+    overflow:hidden;
     display:flex;
-
     align-items:center;
 
-    position:relative;
-
-    overflow:hidden;
-
-    border-bottom:
-        1px solid #30261e;
+    background:
+        radial-gradient(circle at 78% 40%,rgba(230,40,0,.20),transparent 25%),
+        radial-gradient(circle at 90% 60%,rgba(255,110,0,.12),transparent 28%),
+        #080705;
 }
 
 
-/* =========================================================
-   HERO GIF
-========================================================= */
+/* GIF BACKGROUND */
 
-.hero-media{
-
+.hero-gif{
     position:absolute;
-
     inset:0;
-
-    z-index:-5;
-
+    z-index:0;
     overflow:hidden;
 }
 
-
-.hero-media img{
-
+.hero-gif img{
     width:100%;
     height:100%;
-
-    display:block;
-
     object-fit:cover;
 
-    object-position:center;
-
-    opacity:.34;
+    opacity:.38;
 
     filter:
-        saturate(1.15)
-        contrast(1.1)
-        brightness(.82);
-
-    transform:
-        scale(1.03);
+        brightness(.78)
+        contrast(1.12)
+        saturate(1.2);
 }
 
-
-/* DARK GRADIENT OVER GIF */
-
-.hero-media::after{
-
+.hero-gif::after{
     content:"";
-
     position:absolute;
-
     inset:0;
 
     background:
-
         linear-gradient(
             90deg,
-            rgba(8,8,6,.98) 0%,
-            rgba(8,8,6,.92) 27%,
-            rgba(8,8,6,.55) 61%,
-            rgba(8,8,6,.30) 80%,
-            rgba(8,8,6,.82) 100%
+            #080705 0%,
+            rgba(8,7,5,.95) 26%,
+            rgba(8,7,5,.62) 58%,
+            rgba(8,7,5,.35) 78%,
+            rgba(8,7,5,.76) 100%
         ),
-
         linear-gradient(
             0deg,
-            var(--black) 0%,
-            transparent 38%,
-            rgba(8,8,6,.55) 100%
+            #080705 0%,
+            transparent 42%,
+            rgba(8,7,5,.45) 100%
         );
 }
 
 
-/* =========================================================
-   HERO GRID
-========================================================= */
+/* MOVING GLOW */
 
-.grid{
-
+.moving-glow{
     position:absolute;
+    z-index:1;
 
-    inset:-100px;
-
-    z-index:-3;
-
-    opacity:.10;
-
-    background-image:
-
-        linear-gradient(
-            rgba(255,255,255,.13) 1px,
-            transparent 1px
-        ),
-
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,.13) 1px,
-            transparent 1px
-        );
-
-    background-size:
-        62px 62px;
-
-    animation:
-        gridMove 17s linear infinite;
-}
-
-
-@keyframes gridMove{
-
-    from{
-        background-position:
-            0 0;
-    }
-
-    to{
-        background-position:
-            62px 62px;
-    }
-}
-
-
-/* =========================================================
-   RED GLOW
-========================================================= */
-
-.red-glow{
-
-    position:absolute;
-
-    width:600px;
-    height:600px;
-
-    right:-120px;
-    top:-180px;
+    width:520px;
+    height:520px;
 
     border-radius:50%;
 
-    background:
-        rgba(210,20,0,.13);
+    background:rgba(255,42,0,.16);
 
-    filter:
-        blur(120px);
+    filter:blur(100px);
 
-    z-index:-2;
+    animation:glowTravel 7s ease-in-out infinite alternate;
+}
 
-    animation:
-        glowPulse
-        4s
-        ease-in-out
-        infinite
-        alternate;
+@keyframes glowTravel{
+    0%{
+        left:35%;
+        top:-150px;
+        transform:scale(.8);
+    }
+
+    100%{
+        left:72%;
+        top:210px;
+        transform:scale(1.2);
+    }
 }
 
 
-@keyframes glowPulse{
+/* HERO CONTENT */
 
+.hero .container{
+    position:relative;
+    z-index:10;
+}
+
+.hero-content{
+    width:68%;
+    padding:90px 0;
+
+    animation:heroEnter .85s ease-out both;
+}
+
+@keyframes heroEnter{
     from{
-
-        opacity:.55;
-
-        transform:
-            scale(.9);
+        opacity:0;
+        transform:translateY(35px);
     }
 
     to{
-
         opacity:1;
-
-        transform:
-            scale(1.1);
+        transform:translateY(0);
     }
 }
 
-
-/* =========================================================
-   HERO CONTENT
-========================================================= */
-
-.hero-content{
-
-    width:67%;
-
-    padding:
-        90px 0;
-
-    position:relative;
-
-    z-index:5;
-}
-
-
-/* PAPER LABEL */
-
 .paper-label{
-
     display:inline-block;
 
-    position:relative;
+    background:var(--paper);
+    color:#17110d;
 
-    margin-bottom:25px;
-
-    padding:
-        8px 18px;
-
-    background:
-        var(--paper);
-
-    color:#17120e;
+    padding:8px 17px;
 
     font-size:11px;
-
     font-weight:700;
+    letter-spacing:2px;
 
-    letter-spacing:
-        2px;
+    transform:rotate(-1.5deg);
 
-    text-transform:
-        uppercase;
+    box-shadow:6px 6px 0 var(--darkred);
 
-    transform:
-        rotate(-1.3deg);
-
-    box-shadow:
-        6px 6px 0
-        var(--red-dark);
+    margin-bottom:27px;
 }
 
+.hero h1{
+    font-family:"Anton",sans-serif;
 
-/* MAIN TITLE */
-
-.hero-title{
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        clamp(
-            65px,
-            8vw,
-            108px
-        );
-
-    line-height:.83;
-
-    letter-spacing:
-        -.5px;
-
-    text-transform:
-        uppercase;
-
-    text-shadow:
-        0 12px 35px
-        rgba(0,0,0,.8);
-}
-
-
-.hero-title .accounts{
-
-    display:inline-block;
-
-    margin-top:12px;
-
-    color:
-        var(--red2);
-
-    transform:
-        skewX(-3deg);
-
-    text-shadow:
-
-        4px 4px 0
-        #620a05,
-
-        0 0 28px
-        rgba(255,30,0,.18);
-}
-
-
-/* =========================================================
-   RED PAINT STROKE
-========================================================= */
-
-.paint-stroke{
-
-    width:
-        min(
-            470px,
-            80%
-        );
-
-    height:12px;
-
-    margin:
-        30px 0 25px;
-
-    position:relative;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent 0,
-            var(--red) 5%,
-            var(--red2) 76%,
-            transparent 100%
-        );
-
-    transform:
-        skewX(-35deg)
-        rotate(-1deg);
-
-    filter:
-        drop-shadow(
-            0 0 7px
-            rgba(255,30,0,.25)
-        );
-}
-
-
-.paint-stroke::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:73%;
-    height:3px;
-
-    left:45px;
-    top:-8px;
-
-    background:
-        #8e0d06;
-}
-
-
-.paint-stroke::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:115px;
-    height:4px;
-
-    right:-80px;
-    bottom:-8px;
-
-    background:
-        var(--orange);
-}
-
-
-/* =========================================================
-   HERO COPY
-========================================================= */
-
-.hero-copy{
-
-    max-width:590px;
-
-    color:#b9afa3;
-
-    font-size:17px;
+    font-size:clamp(65px,8vw,108px);
+    line-height:.84;
 
     font-weight:400;
 
-    line-height:1.65;
+    text-transform:uppercase;
 
-    letter-spacing:
-        .15px;
+    text-shadow:0 14px 35px #000;
 }
 
+.hero h1 span{
+    display:inline-block;
+
+    color:var(--red2);
+
+    margin-top:13px;
+
+    transform:skewX(-3deg);
+
+    text-shadow:
+        4px 4px 0 #650a05,
+        0 0 30px rgba(255,45,10,.2);
+}
+
+
+/* PAINT LINE */
+
+.paint{
+    width:min(470px,80%);
+    height:12px;
+
+    margin:30px 0 25px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--red) 7%,
+        var(--red2) 78%,
+        transparent
+    );
+
+    transform:skewX(-35deg) rotate(-1deg);
+
+    position:relative;
+
+    animation:paintPulse 2.8s ease-in-out infinite alternate;
+}
+
+.paint::after{
+    content:"";
+
+    position:absolute;
+
+    width:130px;
+    height:4px;
+
+    right:-90px;
+    bottom:-8px;
+
+    background:var(--orange);
+
+    box-shadow:0 0 16px rgba(255,110,20,.6);
+}
+
+@keyframes paintPulse{
+    from{
+        filter:brightness(.8);
+    }
+
+    to{
+        filter:brightness(1.4);
+    }
+}
+
+.hero-copy{
+    max-width:570px;
+
+    color:#b9ad9e;
+
+    font-size:17px;
+    line-height:1.65;
+}
 
 .hero-copy strong{
-
-    color:
-        var(--paper);
-
-    font-weight:600;
+    color:var(--paper);
 }
 
-
 .hero-buttons{
-
     display:flex;
-
-    flex-wrap:wrap;
-
     gap:12px;
-
+    flex-wrap:wrap;
     margin-top:31px;
 }
 
 
-/* =========================================================
+/* =========================
    EMBERS
-========================================================= */
+========================= */
 
 .embers{
-
     position:absolute;
-
     inset:0;
 
-    overflow:hidden;
+    z-index:7;
 
     pointer-events:none;
 
-    z-index:3;
+    overflow:hidden;
 }
 
-
 .ember{
-
     position:absolute;
 
     bottom:-20px;
 
-    width:4px;
-    height:4px;
+    width:5px;
+    height:5px;
+
+    background:#ffad45;
 
     border-radius:50%;
 
-    background:
-        #ffad4c;
-
     box-shadow:
+        0 0 8px #ff3b00,
+        0 0 18px #ff7100;
 
-        0 0 7px
-        #ff3500,
-
-        0 0 15px
-        #ff7200;
-
-    animation:
-        emberRise
-        linear
-        infinite;
+    animation:rise linear infinite;
 }
-
 
 .ember:nth-child(1){
-    left:5%;
-    animation-duration:8s;
+    left:7%;
+    animation-duration:6s;
 }
-
 
 .ember:nth-child(2){
-    left:16%;
-    animation-duration:11s;
-    animation-delay:-6s;
+    left:17%;
+    animation-duration:9s;
+    animation-delay:-4s;
 }
-
 
 .ember:nth-child(3){
     left:29%;
-    animation-duration:9s;
-    animation-delay:-3s;
-}
-
-
-.ember:nth-child(4){
-    left:43%;
-    animation-duration:13s;
-    animation-delay:-9s;
-}
-
-
-.ember:nth-child(5){
-    left:58%;
-    animation-duration:10s;
-    animation-delay:-5s;
-}
-
-
-.ember:nth-child(6){
-    left:70%;
-    animation-duration:12s;
-    animation-delay:-7s;
-}
-
-
-.ember:nth-child(7){
-    left:82%;
-    animation-duration:9s;
+    animation-duration:7s;
     animation-delay:-2s;
 }
 
-
-.ember:nth-child(8){
-    left:94%;
-    animation-duration:14s;
-    animation-delay:-10s;
+.ember:nth-child(4){
+    left:41%;
+    animation-duration:10s;
+    animation-delay:-7s;
 }
 
+.ember:nth-child(5){
+    left:55%;
+    animation-duration:8s;
+    animation-delay:-5s;
+}
 
-@keyframes emberRise{
+.ember:nth-child(6){
+    left:68%;
+    animation-duration:6.5s;
+    animation-delay:-3s;
+}
 
+.ember:nth-child(7){
+    left:81%;
+    animation-duration:9.5s;
+    animation-delay:-7s;
+}
+
+.ember:nth-child(8){
+    left:93%;
+    animation-duration:7.5s;
+    animation-delay:-4s;
+}
+
+@keyframes rise{
     0%{
-
-        transform:
-            translateY(0)
-            translateX(0)
-            scale(.6);
-
+        transform:translate(0,0) scale(.4);
         opacity:0;
     }
 
-    15%{
-
+    12%{
         opacity:1;
     }
 
-    70%{
-
-        opacity:.8;
-    }
-
     100%{
-
-        transform:
-            translateY(-760px)
-            translateX(90px)
-            scale(1.1);
-
+        transform:translate(90px,-760px) scale(1.3);
         opacity:0;
     }
 }
 
 
-/* =========================================================
-   MOVING PAPER TICKER
-========================================================= */
+/* =========================
+   FAST SPARKS
+========================= */
 
-.ticker{
-
-    position:relative;
-
-    z-index:20;
-
-    width:102%;
-
-    margin-left:-1%;
-
+.sparks{
+    position:absolute;
+    inset:0;
+    z-index:8;
     overflow:hidden;
+    pointer-events:none;
+}
 
-    background:
-        var(--paper);
+.spark{
+    position:absolute;
 
-    border-top:
-        4px solid #16110d;
+    width:80px;
+    height:2px;
 
-    border-bottom:
-        4px solid #16110d;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #ffba55,
+        #ff3a0a
+    );
 
-    transform:
-        rotate(-.65deg);
+    opacity:0;
 
-    box-shadow:
-        0 10px 30px
-        rgba(0,0,0,.35);
+    transform:rotate(-25deg);
+
+    animation:sparkShoot 4s linear infinite;
+}
+
+.spark:nth-child(1){
+    top:24%;
+    left:-100px;
+}
+
+.spark:nth-child(2){
+    top:57%;
+    left:-100px;
+    animation-delay:1.3s;
+}
+
+.spark:nth-child(3){
+    top:78%;
+    left:-100px;
+    animation-delay:2.6s;
+}
+
+@keyframes sparkShoot{
+    0%{
+        transform:translateX(0) rotate(-25deg);
+        opacity:0;
+    }
+
+    8%{
+        opacity:1;
+    }
+
+    25%{
+        opacity:0;
+    }
+
+    100%{
+        transform:translateX(1500px) rotate(-25deg);
+        opacity:0;
+    }
 }
 
 
-.ticker-track{
+/* =========================
+   MOVING TICKER
+========================= */
 
+.ticker{
+    width:100%;
+
+    position:relative;
+    z-index:30;
+
+    overflow:hidden;
+
+    background:var(--paper);
+
+    border-top:4px solid #17110d;
+    border-bottom:4px solid #17110d;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+    transform:rotate(-.45deg);
+}
+
+.ticker-track{
     display:flex;
 
     width:max-content;
 
-    animation:
-        tickerMove
-        23s
-        linear
-        infinite;
+    will-change:transform;
+
+    animation:tickerMove 16s linear infinite;
 }
 
+.ticker-group{
+    display:flex;
+    flex-shrink:0;
+}
 
 .ticker-item{
+    flex-shrink:0;
 
-    padding:
-        14px 30px;
+    padding:14px 31px;
 
-    color:#17120e;
+    color:#17110d;
 
-    font-family:
-        "Anton",
-        sans-serif;
+    font-family:"Anton",sans-serif;
 
-    font-size:15px;
+    font-size:16px;
 
-    font-weight:400;
+    letter-spacing:1.3px;
 
-    letter-spacing:
-        1.2px;
-
-    white-space:
-        nowrap;
-
-    text-transform:
-        uppercase;
+    white-space:nowrap;
 }
-
 
 .ticker-item b{
-
-    color:
-        var(--red);
-
-    margin-right:
-        27px;
+    color:var(--red);
+    margin-right:25px;
 }
 
-
 @keyframes tickerMove{
-
     from{
-
-        transform:
-            translateX(0);
+        transform:translateX(0);
     }
 
     to{
-
-        transform:
-            translateX(-50%);
+        transform:translateX(-50%);
     }
 }
 
 
-/* =========================================================
+/* =========================
    STORE
-========================================================= */
+========================= */
 
 .store{
-
-    padding:
-        105px 0 110px;
-
     position:relative;
-}
 
-
-.store::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:550px;
-    height:550px;
-
-    right:-200px;
-    top:50px;
+    padding:105px 0 115px;
 
     background:
-        rgba(190,20,0,.07);
-
-    border-radius:50%;
-
-    filter:
-        blur(120px);
-
-    pointer-events:none;
+        radial-gradient(circle at 80% 35%,rgba(190,35,0,.09),transparent 25%),
+        #080705;
 }
 
-
-.section-top{
-
+.section-head{
     display:flex;
-
+    justify-content:space-between;
     align-items:flex-end;
-
-    justify-content:
-        space-between;
 
     gap:30px;
 
-    margin-bottom:
-        36px;
+    margin-bottom:38px;
 }
 
-
-.section-kicker{
-
-    color:
-        var(--orange);
+.kicker{
+    color:var(--orange);
 
     font-size:11px;
-
     font-weight:700;
 
-    letter-spacing:
-        2.5px;
+    letter-spacing:2.5px;
 
-    text-transform:
-        uppercase;
-
-    margin-bottom:
-        9px;
+    margin-bottom:9px;
 }
 
+.section-head h2{
+    font-family:"Anton",sans-serif;
 
-.section-title{
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        clamp(
-            43px,
-            6vw,
-            70px
-        );
-
-    font-weight:400;
+    font-size:clamp(44px,6vw,70px);
 
     line-height:.9;
 
-    letter-spacing:
-        .3px;
-
-    text-transform:
-        uppercase;
+    font-weight:400;
 }
 
-
-.section-title span{
-
-    color:
-        var(--red2);
+.section-head h2 span{
+    color:var(--red2);
 }
-
-
-/* ONLINE */
 
 .online{
-
-    color:#b8ad9f;
+    color:#c2b5a4;
 
     font-size:12px;
 
-    font-weight:500;
+    letter-spacing:1.3px;
 
-    letter-spacing:
-        1.3px;
-
-    text-transform:
-        uppercase;
-
-    white-space:
-        nowrap;
+    margin-bottom:5px;
 }
 
-
 .online::before{
-
     content:"";
 
     display:inline-block;
@@ -1165,59 +740,39 @@ nav{
     width:7px;
     height:7px;
 
-    margin-right:9px;
-
     border-radius:50%;
 
-    background:
-        #57d67b;
+    background:#59db7b;
 
-    box-shadow:
-        0 0 11px
-        #57d67b;
+    box-shadow:0 0 12px #59db7b;
+
+    margin-right:9px;
 }
 
 
-/* =========================================================
+/* =========================
    STORE CARD
-========================================================= */
+========================= */
 
 .store-card{
-
-    min-height:420px;
-
     display:grid;
 
-    grid-template-columns:
-        380px 1fr;
+    grid-template-columns:360px 1fr;
+
+    min-height:420px;
 
     position:relative;
 
     overflow:hidden;
 
-    border:
-        1px solid #4a3b2d;
+    background:#0e0c09;
 
-    background:
+    border:1px solid #4c3a2b;
 
-        radial-gradient(
-            circle at 75% 50%,
-            rgba(255,86,10,.11),
-            transparent 38%
-        ),
-
-        #0d0c0a;
-
-    box-shadow:
-        0 30px 80px
-        rgba(0,0,0,.45);
+    box-shadow:0 30px 80px rgba(0,0,0,.45);
 }
 
-
-/* RED EDGE */
-
 .store-card::before{
-
     content:"";
 
     position:absolute;
@@ -1228,362 +783,182 @@ nav{
     width:6px;
     height:100%;
 
-    z-index:10;
+    z-index:20;
 
-    background:
+    background:linear-gradient(
+        var(--red2),
+        var(--orange),
+        var(--red)
+    );
 
-        linear-gradient(
-            to bottom,
-            #ff2818,
-            #ff7418,
-            #e3150b
-        );
-
-    box-shadow:
-        0 0 20px
-        rgba(255,60,10,.35);
+    box-shadow:0 0 20px rgba(255,65,10,.4);
 }
 
-
-/* =========================================================
-   STORE COPY
-========================================================= */
-
-.card-copy{
-
-    padding:
-        48px 38px 48px 46px;
+.store-copy{
+    padding:48px 38px 48px 46px;
 
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
 
     position:relative;
-
     z-index:5;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #0d0c0a 0%,
-            #0d0c0a 75%,
-            rgba(13,12,10,.88) 100%
-        );
 }
 
-
-.card-copy small{
-
-    color:
-        var(--orange);
+.store-copy small{
+    color:var(--orange);
 
     font-size:11px;
-
     font-weight:700;
 
-    letter-spacing:
-        2.2px;
+    letter-spacing:2px;
 
-    text-transform:
-        uppercase;
-
-    margin-bottom:
-        13px;
+    margin-bottom:13px;
 }
 
+.store-copy h3{
+    font-family:"Anton",sans-serif;
 
-.card-copy h3{
+    font-size:44px;
 
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        43px;
+    line-height:.95;
 
     font-weight:400;
 
-    line-height:.94;
-
-    letter-spacing:
-        .3px;
-
-    text-transform:
-        uppercase;
-
-    color:
-        var(--paper);
-
-    margin-bottom:
-        19px;
+    margin-bottom:20px;
 }
 
-
-.card-copy h3 span{
-
-    color:
-        var(--red2);
+.store-copy h3 span{
+    color:var(--red2);
 }
 
-
-.card-copy p{
-
-    color:#a99e90;
+.store-copy p{
+    color:#a99d8e;
 
     font-size:15px;
-
     line-height:1.65;
 
-    margin-bottom:
-        27px;
+    margin-bottom:27px;
 }
 
 
-/* =========================================================
-   GIF SHOWCASE
-========================================================= */
+/* =========================
+   GIF CARD
+========================= */
 
-.card-art{
-
+.showcase{
     min-width:0;
 
     position:relative;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     overflow:hidden;
 
-    padding:28px;
+    padding:24px;
 
     background:
-
-        radial-gradient(
-            circle at center,
-            rgba(255,91,14,.17),
-            transparent 55%
-        ),
-
-        linear-gradient(
-            135deg,
-            #15100c,
-            #090806
-        );
+        radial-gradient(circle,rgba(255,100,15,.16),transparent 55%),
+        #0a0907;
 }
 
-
-/* GIANT A */
-
-.card-art::before{
-
-    content:"A";
-
-    position:absolute;
-
-    right:-25px;
-    bottom:-115px;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        440px;
-
-    color:
-        rgba(255,255,255,.025);
-
-    line-height:1;
-
-    pointer-events:none;
-}
-
-
-/* ORANGE SLASH */
-
-.card-art::after{
-
+.showcase::before{
     content:"";
 
     position:absolute;
 
-    width:75%;
-    height:5px;
+    width:500px;
+    height:500px;
 
-    right:-10%;
-    bottom:17%;
+    background:rgba(230,30,0,.12);
 
-    background:
+    border-radius:50%;
 
-        linear-gradient(
-            90deg,
-            transparent,
-            var(--orange),
-            var(--red2),
-            transparent
-        );
+    filter:blur(90px);
 
-    transform:
-        rotate(-8deg);
-
-    box-shadow:
-        0 0 25px
-        rgba(255,90,10,.6);
-
-    pointer-events:none;
+    animation:showcaseGlow 4s ease-in-out infinite alternate;
 }
 
+@keyframes showcaseGlow{
+    from{
+        transform:translateX(-100px) scale(.8);
+    }
 
-/* ACTUAL GIF */
+    to{
+        transform:translateX(120px) scale(1.15);
+    }
+}
 
-.account-gif{
-
+.showcase img{
     display:block;
 
     position:relative;
-
-    z-index:4;
+    z-index:5;
 
     width:100%;
+    max-width:760px;
 
-    max-width:720px;
-
-    max-height:360px;
+    max-height:370px;
 
     object-fit:contain;
 
-    border:
-        1px solid #6d5540;
+    border:1px solid #72553c;
 
-    background:#080806;
-
-    box-shadow:
-
-        0 18px 50px
-        rgba(0,0,0,.65),
-
-        0 0 35px
-        rgba(255,65,10,.10);
-
-    transition:
-
-        transform .35s,
-
-        border-color .35s,
-
-        box-shadow .35s;
-}
-
-
-.card-art:hover
-.account-gif{
-
-    transform:
-        scale(1.015);
-
-    border-color:
-        #9e6944;
+    background:#080705;
 
     box-shadow:
-
-        0 20px 60px
-        rgba(0,0,0,.7),
-
-        0 0 40px
-        rgba(255,75,10,.18);
+        0 20px 55px rgba(0,0,0,.7),
+        0 0 35px rgba(255,60,10,.14);
 }
 
-
-/* =========================================================
-   GIF FALLBACK
-========================================================= */
-
-.gif-fallback{
-
+.gif-error{
     display:none;
 
     position:relative;
-
     z-index:5;
 
     text-align:center;
-
-    padding:
-        50px 25px;
 }
 
-
-.gif-fallback strong{
-
-    display:block;
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:48px;
-
-    font-weight:400;
-
-    color:
-        var(--paper);
-
-    letter-spacing:
-        1px;
+.gif-error strong{
+    font-family:"Anton",sans-serif;
+    font-size:50px;
 }
 
-
-.gif-fallback strong span{
-
-    color:
-        var(--red2);
+.gif-error strong span{
+    color:var(--red2);
 }
 
-
-.gif-fallback p{
-
+.gif-error p{
     margin-top:8px;
 
-    color:#8e8377;
+    color:#8f8273;
 
-    font-size:13px;
-
-    letter-spacing:
-        1.5px;
-
-    text-transform:
-        uppercase;
+    letter-spacing:2px;
 }
 
 
-/* =========================================================
+/* =========================
    CTA
-========================================================= */
+========================= */
 
 .cta{
-
-    padding:
-        105px 0;
-
     position:relative;
 
     overflow:hidden;
 
+    padding:100px 0;
+
     text-align:center;
 
-    border-top:
-        1px solid #33291f;
+    border-top:1px solid #382b20;
+
+    background:#090806;
 }
 
-
 .cta::before{
-
     content:"AC";
 
     position:absolute;
@@ -1591,368 +966,175 @@ nav{
     left:50%;
     top:50%;
 
-    transform:
-        translate(-50%,-50%)
-        rotate(-7deg);
+    transform:translate(-50%,-50%) rotate(-7deg);
 
-    font-family:
-        "Anton",
-        sans-serif;
+    font-family:"Anton",sans-serif;
 
-    font-size:
-        350px;
+    font-size:340px;
 
-    color:
-        rgba(255,255,255,.018);
-
-    pointer-events:none;
+    color:rgba(255,255,255,.025);
 }
 
-
-.cta::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:700px;
-    height:300px;
-
-    left:50%;
-    top:50%;
-
-    transform:
-        translate(-50%,-50%);
-
-    background:
-        rgba(185,20,0,.08);
-
-    filter:
-        blur(110px);
-
-    z-index:-1;
-}
-
-
-.cta-inner{
-
+.cta-content{
     position:relative;
-
-    z-index:3;
+    z-index:5;
 }
 
+.cta h2{
+    font-family:"Anton",sans-serif;
 
-.cta .paper-label{
-
-    margin-bottom:
-        25px;
-}
-
-
-.cta-title{
-
-    font-family:
-        "Anton",
-        sans-serif;
-
-    font-size:
-        clamp(
-            44px,
-            6vw,
-            72px
-        );
+    font-size:clamp(45px,6vw,70px);
 
     font-weight:400;
 
     line-height:.95;
 
-    letter-spacing:
-        .3px;
-
-    text-transform:
-        uppercase;
-
-    margin-bottom:
-        18px;
+    margin:25px 0 18px;
 }
 
-
-.cta-title span{
-
-    color:
-        var(--red2);
+.cta h2 span{
+    color:var(--red2);
 }
-
 
 .cta p{
+    color:#a99d8e;
 
-    max-width:
-        530px;
-
-    margin:
-        0 auto 29px;
-
-    color:#a29789;
+    margin-bottom:28px;
 
     font-size:15px;
-
-    line-height:1.65;
 }
 
 
-/* =========================================================
+/* =========================
    FOOTER
-========================================================= */
+========================= */
 
 footer{
-
-    padding:
-        30px 20px;
+    padding:30px 20px;
 
     text-align:center;
 
-    border-top:
-        1px solid #33291f;
+    border-top:1px solid #382b20;
 
-    color:#6e655c;
+    color:#74695e;
 
     font-size:11px;
 
-    letter-spacing:
-        .7px;
+    letter-spacing:.7px;
 
     line-height:1.8;
 }
 
 
-footer strong{
-
-    color:#8d8276;
-
-    font-weight:600;
-}
-
-
-/* =========================================================
+/* =========================
    MOBILE
-========================================================= */
+========================= */
 
 @media(max-width:800px){
 
     .container{
-
-        width:
-            calc(100% - 24px);
+        width:calc(100% - 24px);
     }
 
-
     header{
-
         height:67px;
     }
 
-
-    .logo-frame{
-
+    .logo{
         width:43px;
         height:43px;
     }
 
-
-    .brand-name{
-
+    .brand-text{
         font-size:16px;
     }
 
-
     .nav-link{
-
         display:none;
     }
 
-
     .nav-right{
-
         gap:8px;
     }
 
-
-    .nav-right .red-button{
-
-        padding:
-            10px 13px;
-
+    .nav-right .btn{
+        padding:10px 13px;
         font-size:10px;
     }
 
-
     .hero{
-
         min-height:650px;
     }
 
-
     .hero-content{
-
         width:100%;
-
-        padding:
-            70px 0;
+        padding:70px 0;
     }
 
-
-    .hero-title{
-
-        letter-spacing:0;
+    .hero-gif img{
+        opacity:.22;
     }
 
-
-    .hero-media img{
-
-        opacity:.23;
-    }
-
-
-    .hero-media::after{
-
+    .hero-gif::after{
         background:
-
             linear-gradient(
                 90deg,
-                rgba(8,8,6,.92),
-                rgba(8,8,6,.58)
+                rgba(8,7,5,.94),
+                rgba(8,7,5,.58)
             ),
-
             linear-gradient(
                 0deg,
-                var(--black),
-                transparent 50%
+                #080705,
+                transparent
             );
     }
 
-
-    .paint-stroke{
-
-        width:75%;
-    }
-
-
-    .section-top{
-
+    .section-head{
         display:block;
     }
-
 
     .online{
-
-        display:block;
-
-        margin-top:
-            18px;
+        margin-top:18px;
     }
-
 
     .store{
-
-        padding:
-            75px 0 80px;
+        padding:75px 0 80px;
     }
-
 
     .store-card{
-
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
     }
 
-
-    .card-copy{
-
-        padding:
-            38px 27px;
+    .store-copy{
+        padding:38px 27px;
     }
 
-
-    .card-copy h3{
-
+    .store-copy h3{
         font-size:38px;
     }
 
-
-    .card-art{
-
-        min-height:250px;
-
-        padding:15px;
+    .showcase{
+        min-height:260px;
+        padding:14px;
     }
 
-
-    .account-gif{
-
+    .showcase img{
         max-height:none;
     }
 
-
     .ticker-item{
-
-        font-size:13px;
-
-        padding:
-            12px 22px;
+        font-size:14px;
+        padding:12px 22px;
     }
 
-
-    .cta{
-
-        padding:
-            80px 0;
-    }
-}
-
-
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-
-@media(
-    prefers-reduced-motion:
-    reduce
-){
-
-    *{
-
-        animation-duration:
-            .01ms !important;
-
-        animation-iteration-count:
-            1 !important;
-
-        scroll-behavior:
-            auto !important;
-    }
 }
 
 </style>
-
-
-<script type="application/ld+json">
-{
-    "@context":"https://schema.org",
-    "@type":"WebSite",
-    "name":"APEXCHEAP",
-    "url":"https://mereksss.github.io/apexcheap/"
-}
-</script>
-
 </head>
 
 
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
 
 <header>
 
@@ -1960,26 +1142,16 @@ footer strong{
 
 <nav>
 
+<a href="#" class="brand">
 
-<a
-    href="#"
-    class="brand"
->
+    <img
+        class="logo"
+        src="./apexcheaplogo.png"
+        alt="APEXCHEAP"
+    >
 
-    <div class="logo-frame">
-
-        <img
-            src="./apexcheaplogo.png"
-            alt="APEXCHEAP"
-        >
-
-    </div>
-
-
-    <div class="brand-name">
-
+    <div class="brand-text">
         APEX<span>CHEAP</span>
-
     </div>
 
 </a>
@@ -1989,23 +1161,19 @@ footer strong{
 
     <a
         href="#accounts"
-        class="nav-link"
-    >
+        class="nav-link">
         ACCOUNTS
     </a>
-
 
     <a
         href="https://discord.gg/apexcheap"
         target="_blank"
         rel="noopener"
-        class="red-button"
-    >
+        class="btn btn-red">
         JOIN DISCORD
     </a>
 
 </div>
-
 
 </nav>
 
@@ -2015,63 +1183,52 @@ footer strong{
 
 
 
-<!-- =====================================================
-     MAIN
-===================================================== -->
-
 <main>
 
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
 
-<!-- ANIMATED GIF BACKGROUND -->
-
-<div class="hero-media">
+<div class="hero-gif">
 
     <img
-        src="./showcase.gif?v=8"
+        src="./showcase%20(3).gif?v=40"
         alt=""
     >
 
 </div>
 
 
-<div class="grid"></div>
+<div class="moving-glow"></div>
 
-<div class="red-glow"></div>
-
-
-<!-- EMBERS -->
 
 <div class="embers">
 
     <i class="ember"></i>
-
+    <i class="ember"></i>
+    <i class="ember"></i>
     <i class="ember"></i>
 
     <i class="ember"></i>
-
     <i class="ember"></i>
-
     <i class="ember"></i>
-
-    <i class="ember"></i>
-
-    <i class="ember"></i>
-
     <i class="ember"></i>
 
 </div>
 
 
+<div class="sparks">
+
+    <i class="spark"></i>
+    <i class="spark"></i>
+    <i class="spark"></i>
+
+</div>
+
 
 <div class="container">
-
 
 <div class="hero-content">
 
@@ -2083,20 +1240,20 @@ footer strong{
 </div>
 
 
-<h1 class="hero-title">
+<h1>
 
     APEX LEGENDS
 
     <br>
 
-    <span class="accounts">
+    <span>
         ACCOUNTS
     </span>
 
 </h1>
 
 
-<div class="paint-stroke"></div>
+<div class="paint"></div>
 
 
 <p class="hero-copy">
@@ -2106,36 +1263,31 @@ footer strong{
     </strong>
 
     Predator ranks, Mythics,
-    rare skins and account
-    showcases.
+    rare skins and account showcases.
 
 </p>
 
 
 <div class="hero-buttons">
 
+    <a
+        href="#accounts"
+        class="btn btn-red">
 
-<a
-    href="#accounts"
-    class="red-button"
->
+        BROWSE ACCOUNTS
 
-    BROWSE ACCOUNTS
-
-</a>
+    </a>
 
 
-<a
-    href="https://discord.gg/apexcheap"
-    target="_blank"
-    rel="noopener"
-    class="dark-button"
->
+    <a
+        href="https://discord.gg/apexcheap"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-dark">
 
-    JOIN DISCORD
+        JOIN DISCORD
 
-</a>
-
+    </a>
 
 </div>
 
@@ -2149,107 +1301,51 @@ footer strong{
 
 
 
-<!-- =====================================================
-     ANIMATED TICKER
-===================================================== -->
+<!-- ================= MOVING STRIP ================= -->
 
 <div class="ticker">
 
 <div class="ticker-track">
 
 
-<div class="ticker-item">
+<div class="ticker-group">
 
-    <b>◆</b>
-    PREDATOR
+    <div class="ticker-item">
+        <b>◆</b>PREDATOR
+    </div>
 
-</div>
+    <div class="ticker-item">
+        <b>◆</b>MYTHICS
+    </div>
 
+    <div class="ticker-item">
+        <b>◆</b>RARE SKINS
+    </div>
 
-<div class="ticker-item">
-
-    <b>◆</b>
-    MYTHICS
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    RARE SKINS
+    <div class="ticker-item">
+        <b>◆</b>APEXCHEAP
+    </div>
 
 </div>
 
 
-<div class="ticker-item">
+<div class="ticker-group">
 
-    <b>◆</b>
-    APEXCHEAP
+    <div class="ticker-item">
+        <b>◆</b>PREDATOR
+    </div>
 
-</div>
+    <div class="ticker-item">
+        <b>◆</b>MYTHICS
+    </div>
 
+    <div class="ticker-item">
+        <b>◆</b>RARE SKINS
+    </div>
 
-<div class="ticker-item">
-
-    <b>◆</b>
-    PREDATOR
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    MYTHICS
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    RARE SKINS
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    APEXCHEAP
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    PREDATOR
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    MYTHICS
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    RARE SKINS
-
-</div>
-
-
-<div class="ticker-item">
-
-    <b>◆</b>
-    APEXCHEAP
+    <div class="ticker-item">
+        <b>◆</b>APEXCHEAP
+    </div>
 
 </div>
 
@@ -2260,32 +1356,26 @@ footer strong{
 
 
 
-<!-- =====================================================
-     ACCOUNTS
-===================================================== -->
+<!-- ================= ACCOUNTS ================= -->
 
 <section
     class="store"
-    id="accounts"
->
+    id="accounts">
 
 
 <div class="container">
 
 
-<div class="section-top">
+<div class="section-head">
 
 
 <div>
 
-    <div class="section-kicker">
-
+    <div class="kicker">
         APEXCHEAP
-
     </div>
 
-
-    <h2 class="section-title">
+    <h2>
 
         AVAILABLE
         <span>ACCOUNTS</span>
@@ -2306,22 +1396,14 @@ footer strong{
 
 
 
-<!-- =================================================
-     CURRENT STORE PANEL
-================================================= -->
-
 <div class="store-card">
 
 
-<!-- LEFT -->
-
-<div class="card-copy">
+<div class="store-copy">
 
 
 <small>
-
     APEXCHEAP
-
 </small>
 
 
@@ -2344,8 +1426,8 @@ footer strong{
 
     <br>
 
-    For everything currently available,
-    check the Discord shop.
+    Current accounts are
+    available in Discord.
 
 </p>
 
@@ -2356,8 +1438,7 @@ footer strong{
     href="https://discord.gg/apexcheap"
     target="_blank"
     rel="noopener"
-    class="red-button"
->
+    class="btn btn-red">
 
     VIEW DISCORD SHOP →
 
@@ -2370,33 +1451,26 @@ footer strong{
 
 
 
-<!-- RIGHT / GIF -->
-
-<div class="card-art">
+<div class="showcase">
 
 
 <img
 
-    id="accountShowcase"
-
-    class="account-gif"
-
-    src="./showcase.gif?v=8"
+    src="./showcase%20(3).gif?v=40"
 
     alt=""
 
     onerror="
         this.style.display='none';
-        document.getElementById('gifFallback').style.display='block';
+        document.getElementById('gifError').style.display='block';
     "
 
 >
 
 
 <div
-    class="gif-fallback"
-    id="gifFallback"
->
+    class="gif-error"
+    id="gifError">
 
 
 <strong>
@@ -2428,14 +1502,12 @@ footer strong{
 
 
 
-<!-- =====================================================
-     FINAL CTA
-===================================================== -->
+<!-- ================= CTA ================= -->
 
 <section class="cta">
 
 
-<div class="container cta-inner">
+<div class="container cta-content">
 
 
 <div class="paper-label">
@@ -2445,7 +1517,7 @@ footer strong{
 </div>
 
 
-<h2 class="cta-title">
+<h2>
 
     VIEW THE
     <span>SHOP</span>
@@ -2455,9 +1527,9 @@ footer strong{
 
 <p>
 
-    Current accounts,
-    showcases and buyer feedback
-    are available in Discord.
+    Accounts, showcases and
+    buyer feedback are available
+    in Discord.
 
 </p>
 
@@ -2466,8 +1538,7 @@ footer strong{
     href="https://discord.gg/apexcheap"
     target="_blank"
     rel="noopener"
-    class="red-button"
->
+    class="btn btn-red">
 
     ENTER APEXCHEAP →
 
@@ -2484,16 +1555,10 @@ footer strong{
 
 
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
 <footer>
 
 <strong>
-
     APEXCHEAP • ESTABLISHED 2021
-
 </strong>
 
 <br>
@@ -2502,9 +1567,8 @@ Independent marketplace.
 
 <br>
 
-Not affiliated with
-Electronic Arts or
-Respawn Entertainment.
+Not affiliated with Electronic Arts
+or Respawn Entertainment.
 
 </footer>
 
