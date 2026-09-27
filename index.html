@@ -6,35 +6,28 @@
 
   <title>Apex Legends Accounts for Sale | APEXCHEAP</title>
 
-  <meta name="description" content="Browse Apex Legends accounts for sale at APEXCHEAP. Predator accounts, Mythics, rare skins, high-level accounts and more.">
+  <meta name="description"
+        content="Browse Apex Legends accounts for sale at APEXCHEAP. Predator, Mythic, rare skin and high-level Apex Legends accounts.">
+
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#090909">
+  <meta name="theme-color" content="#080808">
 
-  <link rel="canonical" href="https://mereksss.github.io/apexcheap/">
-
-  <meta property="og:title" content="Apex Legends Accounts | APEXCHEAP">
-  <meta property="og:description" content="Browse Apex Legends accounts, Predator accounts, Mythics and rare skins at APEXCHEAP.">
-  <meta property="og:url" content="https://mereksss.github.io/apexcheap/">
-  <meta property="og:type" content="website">
+  <link rel="canonical"
+        href="https://mereksss.github.io/apexcheap/">
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     :root {
-      --black: #080808;
-      --black2: #101010;
-      --panel: #141414;
-      --panel2: #1a1a1a;
-      --red: #e10600;
-      --red-dark: #8e0502;
-      --paper: #eee8dc;
+      --red: #e31313;
       --white: #f4f1ea;
-      --muted: #a5a5a5;
-      --border: #292929;
+      --muted: #9b9b9b;
+      --border: #282828;
+      --panel: #101010;
     }
 
     html {
@@ -42,9 +35,7 @@
     }
 
     body {
-      background:
-        radial-gradient(circle at 50% 0%, rgba(150,0,0,.13), transparent 34%),
-        linear-gradient(180deg, #0d0d0d 0%, #080808 55%, #050505 100%);
+      background: #080808;
       color: var(--white);
       font-family: Arial, Helvetica, sans-serif;
       min-height: 100vh;
@@ -55,532 +46,226 @@
     }
 
     .container {
-      width: min(1180px, calc(100% - 34px));
+      width: min(1050px, calc(100% - 32px));
       margin: auto;
     }
 
-    /* TOP NAV */
+    /* HEADER */
 
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(7,7,7,.94);
-      border-bottom: 1px solid #252525;
-      backdrop-filter: blur(14px);
+    header {
+      border-bottom: 1px solid #202020;
+      background: rgba(8,8,8,.95);
     }
 
-    .nav-inner {
-      height: 72px;
+    nav {
+      height: 68px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
     }
 
-    .nav-logo {
+    .brand {
       color: white;
-      font-weight: 1000;
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 900;
       letter-spacing: 1px;
     }
 
-    .nav-logo span {
+    .brand span {
       color: var(--red);
     }
 
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-link {
-      color: #bdbdbd;
-      font-size: 13px;
-      font-weight: 700;
-      padding: 10px;
-    }
-
-    .discord-button {
-      display: inline-block;
-      color: white;
+    .discord {
       background: var(--red);
-      border: 1px solid #ff2922;
-      padding: 11px 18px;
-      font-size: 13px;
+      color: white;
+      padding: 10px 17px;
+      font-size: 12px;
       font-weight: 900;
-      letter-spacing: .3px;
-      transition: .18s;
+      letter-spacing: .5px;
+      transition: .2s;
     }
 
-    .discord-button:hover {
-      background: #ff130b;
-      transform: translateY(-1px);
+    .discord:hover {
+      background: #ff2424;
     }
 
     /* HERO */
 
     .hero {
-      padding: 75px 0 55px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
+      padding: 70px 0 50px;
     }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 650px;
-      height: 250px;
-      background: rgba(210,0,0,.08);
-      filter: blur(80px);
-      left: 50%;
-      top: 30px;
-      transform: translateX(-50%);
-      pointer-events: none;
-    }
-
-    .main-logo {
-      width: min(520px, 85vw);
+    .logo {
+      width: min(430px, 88%);
+      height: auto;
       display: block;
-      margin: 0 auto 34px;
-      position: relative;
-      filter: drop-shadow(0 18px 45px rgba(0,0,0,.65));
+      margin: 0 auto 35px;
     }
 
-    .small-label {
-      display: inline-block;
-      position: relative;
-      background: var(--paper);
-      color: #111;
-      padding: 7px 18px;
+    .tag {
+      color: var(--red);
       font-size: 11px;
-      font-weight: 1000;
+      font-weight: 900;
       letter-spacing: 2px;
-      transform: rotate(-1deg);
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
     h1 {
-      position: relative;
-      font-size: clamp(42px, 7vw, 78px);
-      line-height: .98;
-      font-weight: 1000;
-      letter-spacing: -2px;
+      font-size: clamp(38px, 7vw, 67px);
+      line-height: 1;
       text-transform: uppercase;
-      max-width: 930px;
-      margin: auto;
+      letter-spacing: -2px;
     }
 
-    h1 .red {
+    h1 span {
       color: var(--red);
-      text-shadow: 3px 3px 0 #4d0000;
     }
 
-    .red-stroke {
-      width: min(630px, 88%);
-      height: 10px;
-      background: var(--red);
-      margin: 18px auto 24px;
-      transform: skewX(-20deg) rotate(-1deg);
-      box-shadow:
-        50px 5px 0 -3px #7b0502,
-        -65px -3px 0 -4px #b70702;
-    }
-
-    .hero-description {
-      position: relative;
-      max-width: 700px;
-      margin: auto;
-      color: #bcbcbc;
-      font-size: 17px;
+    .hero p {
+      max-width: 620px;
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: 16px;
       line-height: 1.7;
     }
 
-    .hero-buttons {
-      position: relative;
-      margin-top: 30px;
+    .buttons {
+      margin-top: 28px;
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
-    .primary {
-      display: inline-block;
-      background: var(--red);
-      border: 1px solid #ff2922;
-      color: white;
-      padding: 15px 25px;
-      font-size: 13px;
-      font-weight: 1000;
-      letter-spacing: .8px;
+    .primary,
+    .secondary {
+      padding: 13px 21px;
+      font-size: 12px;
+      font-weight: 900;
       text-transform: uppercase;
-      transition: .18s;
+      letter-spacing: .6px;
     }
 
-    .primary:hover {
-      background: #ff130b;
-      transform: translateY(-2px);
+    .primary {
+      background: var(--red);
+      color: white;
     }
 
     .secondary {
-      display: inline-block;
-      background: #171717;
-      border: 1px solid #383838;
+      border: 1px solid #353535;
       color: white;
-      padding: 15px 25px;
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: .7px;
-      text-transform: uppercase;
+      background: #111;
     }
 
     /* SHOWCASE */
 
-    .showcase-wrap {
-      padding: 35px 0 70px;
-    }
-
     .showcase {
-      position: relative;
-      max-width: 1050px;
-      margin: auto;
-      background: #101010;
-      border: 1px solid #333;
-      padding: 9px;
-      box-shadow: 0 28px 80px rgba(0,0,0,.55);
-    }
-
-    .showcase::before {
-      content: "APEXCHEAP";
-      position: absolute;
-      top: -14px;
-      left: 24px;
-      z-index: 5;
-      background: var(--paper);
-      color: #111;
-      padding: 6px 14px;
-      font-size: 10px;
-      font-weight: 1000;
-      letter-spacing: 1.4px;
-      transform: rotate(-2deg);
+      margin: 20px auto 85px;
+      max-width: 1000px;
+      border: 1px solid #292929;
+      background: #0e0e0e;
+      padding: 6px;
     }
 
     .showcase img {
       width: 100%;
+      height: auto;
       display: block;
     }
 
-    /* STATS */
+    /* SHOP */
 
-    .stats {
-      max-width: 900px;
-      margin: 0 auto 85px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      border-top: 1px solid #343434;
-      border-bottom: 1px solid #343434;
-      background: #0e0e0e;
+    .shop {
+      padding: 20px 0 90px;
     }
 
-    .stat {
+    .section-heading {
       text-align: center;
-      padding: 23px 10px;
-      border-right: 1px solid #2d2d2d;
+      margin-bottom: 30px;
     }
 
-    .stat:last-child {
-      border-right: none;
+    .section-heading h2 {
+      font-size: clamp(28px, 5vw, 42px);
+      text-transform: uppercase;
+      margin-bottom: 9px;
     }
 
-    .stat strong {
-      display: block;
+    .section-heading h2 span {
       color: var(--red);
-      font-size: 24px;
-      font-weight: 1000;
-      margin-bottom: 4px;
     }
 
-    .stat span {
-      color: #8f8f8f;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    /* HEADINGS */
-
-    section {
-      padding: 60px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 35px;
-    }
-
-    .section-title .paper {
-      display: inline-block;
-      background: var(--paper);
-      color: #111;
-      padding: 10px 25px;
-      font-weight: 1000;
-      font-size: clamp(24px, 4vw, 38px);
-      text-transform: uppercase;
-      letter-spacing: -1px;
-      transform: rotate(-.6deg);
-      box-shadow: 7px 7px 0 var(--red-dark);
-    }
-
-    .section-title p {
-      max-width: 650px;
-      margin: 24px auto 0;
-      color: #999;
-      line-height: 1.6;
-    }
-
-    /* EMPTY STORE */
-
-    .store-empty {
-      max-width: 900px;
-      margin: auto;
-      background:
-        linear-gradient(135deg, rgba(225,6,0,.08), transparent 45%),
-        #111;
-      border: 1px solid #333;
-      padding: 55px 30px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .store-empty::after {
-      content: "";
-      position: absolute;
-      width: 180px;
-      height: 8px;
-      background: var(--red);
-      right: -30px;
-      bottom: 18px;
-      transform: rotate(-8deg);
-    }
-
-    .store-empty .status {
-      color: var(--red);
-      font-size: 12px;
-      font-weight: 1000;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 13px;
-    }
-
-    .store-empty h3 {
-      font-size: 29px;
-      text-transform: uppercase;
-      margin-bottom: 13px;
-    }
-
-    .store-empty p {
-      color: #9f9f9f;
-      max-width: 560px;
-      margin: 0 auto 25px;
-      line-height: 1.65;
-    }
-
-    /* FEATURES */
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-
-    .feature {
-      position: relative;
-      min-height: 190px;
-      background: #111;
-      border: 1px solid #303030;
-      padding: 26px;
-      overflow: hidden;
-    }
-
-    .feature::before {
-      content: "";
-      position: absolute;
-      width: 70px;
-      height: 5px;
-      background: var(--red);
-      left: 0;
-      top: 0;
-    }
-
-    .feature-number {
-      color: #3b3b3b;
-      position: absolute;
-      right: 15px;
-      top: 8px;
-      font-size: 48px;
-      font-weight: 1000;
-    }
-
-    .feature-icon {
-      font-size: 25px;
-      margin-bottom: 17px;
-    }
-
-    .feature h3 {
-      text-transform: uppercase;
-      font-size: 17px;
-      margin-bottom: 10px;
-    }
-
-    .feature p {
-      color: #979797;
+    .section-heading p {
+      color: var(--muted);
       font-size: 14px;
-      line-height: 1.65;
+    }
+
+    .coming-soon {
+      max-width: 760px;
+      margin: auto;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      text-align: center;
+      padding: 45px 25px;
       position: relative;
     }
 
-    /* ACCOUNT TEMPLATE FOR LATER */
-
-    .account-preview {
-      max-width: 1050px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1.45fr .55fr;
-      background: #0e0e0e;
-      border: 1px solid #383838;
+    .coming-soon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90px;
+      height: 3px;
+      background: var(--red);
     }
 
-    .account-image {
-      min-height: 300px;
-      display: grid;
-      place-items: center;
-      color: #666;
-      background:
-        linear-gradient(135deg, rgba(225,6,0,.12), transparent),
-        #151515;
-      border-right: 1px solid #383838;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-    }
-
-    .account-info {
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .account-info .listing {
-      color: var(--red);
-      font-size: 11px;
-      font-weight: 1000;
-      letter-spacing: 1.5px;
+    .coming-soon h3 {
+      font-size: 23px;
+      text-transform: uppercase;
       margin-bottom: 10px;
     }
 
-    .account-info h3 {
-      text-transform: uppercase;
-      font-size: 23px;
-      margin-bottom: 18px;
-    }
-
-    .account-info p {
-      color: #8e8e8e;
+    .coming-soon p {
+      color: var(--muted);
       line-height: 1.6;
-      font-size: 13px;
-      margin-bottom: 22px;
+      font-size: 14px;
+      max-width: 500px;
+      margin: 0 auto 23px;
     }
 
     /* CTA */
 
     .cta {
-      max-width: 950px;
-      margin: 70px auto;
-      position: relative;
-      padding: 60px 25px;
+      border-top: 1px solid #202020;
       text-align: center;
-      background:
-        radial-gradient(circle at 50% 20%, rgba(225,6,0,.18), transparent 55%),
-        #101010;
-      border: 1px solid #383838;
-    }
-
-    .cta::before,
-    .cta::after {
-      content: "";
-      position: absolute;
-      height: 5px;
-      background: var(--red);
-      width: 35%;
-    }
-
-    .cta::before {
-      left: 0;
-      top: 0;
-    }
-
-    .cta::after {
-      right: 0;
-      bottom: 0;
+      padding: 75px 20px;
     }
 
     .cta h2 {
-      font-size: clamp(30px, 5vw, 45px);
+      font-size: clamp(28px, 5vw, 42px);
       text-transform: uppercase;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
+    }
+
+    .cta h2 span {
+      color: var(--red);
     }
 
     .cta p {
-      color: #9c9c9c;
-      max-width: 610px;
-      margin: 0 auto 26px;
-      line-height: 1.65;
+      color: var(--muted);
+      max-width: 540px;
+      margin: 0 auto 24px;
+      line-height: 1.6;
     }
 
     footer {
-      border-top: 1px solid #242424;
+      border-top: 1px solid #202020;
+      color: #5f5f5f;
       text-align: center;
-      padding: 32px 20px;
-      color: #666;
+      padding: 25px 15px;
       font-size: 11px;
-      line-height: 1.8;
-    }
-
-    footer strong {
-      color: #aaa;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 800px) {
-      .features {
-        grid-template-columns: 1fr;
-      }
-
-      .stats {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .stat:nth-child(2) {
-        border-right: none;
-      }
-
-      .stat:nth-child(-n+2) {
-        border-bottom: 1px solid #2d2d2d;
-      }
-
-      .account-preview {
-        grid-template-columns: 1fr;
-      }
-
-      .account-image {
-        border-right: 0;
-        border-bottom: 1px solid #383838;
-      }
+      line-height: 1.7;
     }
 
     @media (max-width: 600px) {
@@ -588,12 +273,12 @@
         width: calc(100% - 22px);
       }
 
-      .nav-link {
-        display: none;
+      .hero {
+        padding-top: 45px;
       }
 
-      .hero {
-        padding-top: 50px;
+      .logo {
+        margin-bottom: 25px;
       }
 
       h1 {
@@ -601,15 +286,12 @@
       }
 
       .showcase {
-        padding: 5px;
+        margin-bottom: 60px;
+        padding: 3px;
       }
 
-      .stats {
-        margin-bottom: 45px;
-      }
-
-      section {
-        padding: 42px 0;
+      .shop {
+        padding-bottom: 65px;
       }
     }
   </style>
@@ -622,32 +304,29 @@
     "url": "https://mereksss.github.io/apexcheap/"
   }
   </script>
+
 </head>
 
 <body>
 
-<nav>
-  <div class="container nav-inner">
+<header>
+  <div class="container">
+    <nav>
 
-    <a href="#" class="nav-logo">
-      APEX<span>CHEAP</span>
-    </a>
+      <a class="brand" href="#">
+        APEX<span>CHEAP</span>
+      </a>
 
-    <div class="nav-right">
-      <a href="#accounts" class="nav-link">ACCOUNTS</a>
-      <a href="#about" class="nav-link">ABOUT</a>
-
-      <a
-        class="discord-button"
-        href="https://discord.gg/apexcheap"
-        target="_blank"
-        rel="noopener">
+      <a class="discord"
+         href="https://discord.gg/apexcheap"
+         target="_blank"
+         rel="noopener">
         JOIN DISCORD
       </a>
-    </div>
 
+    </nav>
   </div>
-</nav>
+</header>
 
 
 <main>
@@ -656,42 +335,39 @@
 
     <section class="hero">
 
+      <!-- YOUR AC LOGO -->
       <img
+        class="logo"
         src="apexcheaplogo.png"
-        alt="APEXCHEAP Apex Legends Accounts"
-        class="main-logo">
+        alt="APEXCHEAP - Apex Legends Accounts">
 
-      <div class="small-label">
-        ESTABLISHED 2021
+      <div class="tag">
+        APEX LEGENDS MARKETPLACE
       </div>
 
       <h1>
         APEX LEGENDS<br>
-        <span class="red">ACCOUNTS</span>
+        <span>ACCOUNTS</span>
       </h1>
 
-      <div class="red-stroke"></div>
-
-      <p class="hero-description">
-        Browse Apex Legends accounts at APEXCHEAP.
-        Predator ranks, Mythics, rare skins, high-level accounts
-        and detailed account showcases.
+      <p>
+        Predator ranks, Mythics, rare skins and high-level
+        Apex Legends accounts. Browse APEXCHEAP listings
+        and purchase through our Discord marketplace.
       </p>
 
-      <div class="hero-buttons">
+      <div class="buttons">
 
-        <a
-          href="#accounts"
-          class="primary">
+        <a class="primary"
+           href="#accounts">
           Browse Accounts
         </a>
 
-        <a
-          href="https://discord.gg/apexcheap"
-          target="_blank"
-          rel="noopener"
-          class="secondary">
-          Join Discord
+        <a class="secondary"
+           href="https://discord.gg/apexcheap"
+           target="_blank"
+           rel="noopener">
+          Discord
         </a>
 
       </div>
@@ -699,77 +375,46 @@
     </section>
 
 
-    <div class="showcase-wrap">
+    <!-- YOUR ANIMATED ACCOUNT SHOWCASE -->
+    <div class="showcase">
 
-      <div class="showcase">
-        <img
-          src="apex-showcase.gif"
-          alt="APEXCHEAP Apex Legends account showcase">
-      </div>
-
-    </div>
-
-
-    <div class="stats">
-
-      <div class="stat">
-        <strong>2021</strong>
-        <span>Established</span>
-      </div>
-
-      <div class="stat">
-        <strong>27</strong>
-        <span>Completed</span>
-      </div>
-
-      <div class="stat">
-        <strong>39</strong>
-        <span>Orders</span>
-      </div>
-
-      <div class="stat">
-        <strong>24/7</strong>
-        <span>Marketplace</span>
-      </div>
+      <img
+        src="showcase.gif"
+        alt="APEXCHEAP Apex Legends account showcase">
 
     </div>
 
 
-    <section id="accounts">
+    <section class="shop" id="accounts">
 
-      <div class="section-title">
+      <div class="section-heading">
 
-        <div class="paper">
-          Available Accounts
-        </div>
+        <h2>
+          AVAILABLE <span>ACCOUNTS</span>
+        </h2>
 
         <p>
-          Predator accounts, Mythics, rare cosmetics and
-          high-level Apex Legends accounts.
+          Current Apex Legends account listings.
         </p>
 
       </div>
 
 
-      <div class="store-empty">
+      <!-- TEMPORARY UNTIL WE ADD YOUR REAL ACCOUNTS -->
 
-        <div class="status">
-          ● Store Update In Progress
-        </div>
+      <div class="coming-soon">
 
-        <h3>New Listings Are Being Added</h3>
+        <h3>Listings Being Added</h3>
 
         <p>
-          We're currently preparing the website listings.
-          Browse the live APEXCHEAP marketplace on Discord
-          for current availability.
+          New accounts are being prepared for the website.
+          Current listings are available in the APEXCHEAP Discord.
         </p>
 
-        <a
-          href="https://discord.gg/apexcheap"
-          target="_blank"
-          rel="noopener"
-          class="primary">
+        <a class="primary"
+           href="https://discord.gg/apexcheap"
+           target="_blank"
+           rel="noopener">
           View Live Shop →
         </a>
 
@@ -777,157 +422,37 @@
 
     </section>
 
-
-    <section id="about">
-
-      <div class="section-title">
-
-        <div class="paper">
-          Why APEXCHEAP
-        </div>
-
-      </div>
-
-
-      <div class="features">
-
-        <div class="feature">
-
-          <div class="feature-number">01</div>
-
-          <div class="feature-icon">⚡</div>
-
-          <h3>Automatic Delivery</h3>
-
-          <p>
-            Account information is delivered privately
-            after checkout.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-number">02</div>
-
-          <div class="feature-icon">🎮</div>
-
-          <h3>Detailed Accounts</h3>
-
-          <p>
-            Review levels, Mythics, cosmetics, screenshots
-            and other account information before purchasing.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-number">03</div>
-
-          <div class="feature-icon">★</div>
-
-          <h3>Buyer Vouches</h3>
-
-          <p>
-            View previous customer feedback and buyer
-            vouches inside our Discord community.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section>
-
-      <div class="section-title">
-
-        <div class="paper">
-          Account Store
-        </div>
-
-        <p>
-          Individual account listings will appear here.
-        </p>
-
-      </div>
-
-
-      <div class="account-preview">
-
-        <div class="account-image">
-          ACCOUNT LISTINGS COMING SOON
-        </div>
-
-        <div class="account-info">
-
-          <div class="listing">
-            APEXCHEAP MARKETPLACE
-          </div>
-
-          <h3>Your Next Account</h3>
-
-          <p>
-            Full account artwork, price, level, Mythics,
-            rank and listing information will be displayed here.
-          </p>
-
-          <a
-            href="https://discord.gg/apexcheap"
-            target="_blank"
-            rel="noopener"
-            class="primary">
-            Browse Discord
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="cta">
-
-      <div class="small-label">
-        APEXCHEAP
-      </div>
-
-      <h2>Find Your Next Account</h2>
-
-      <p>
-        Join the APEXCHEAP Discord marketplace to browse
-        current Apex Legends accounts, account showcases,
-        availability and buyer feedback.
-      </p>
-
-      <a
-        href="https://discord.gg/apexcheap"
-        target="_blank"
-        rel="noopener"
-        class="primary">
-        Join APEXCHEAP →
-      </a>
-
-    </section>
-
   </div>
+
+
+  <section class="cta">
+
+    <h2>
+      JOIN <span>APEXCHEAP</span>
+    </h2>
+
+    <p>
+      Browse current Apex Legends accounts, account showcases
+      and buyer feedback inside our Discord.
+    </p>
+
+    <a class="primary"
+       href="https://discord.gg/apexcheap"
+       target="_blank"
+       rel="noopener">
+      Join Discord →
+    </a>
+
+  </section>
 
 </main>
 
 
 <footer>
-  <strong>APEXCHEAP • ESTABLISHED 2021</strong>
+  APEXCHEAP • ESTABLISHED 2021
   <br>
-  Gaming account marketplace.
-  <br><br>
-  APEXCHEAP is an independent marketplace and is not affiliated with,
-  endorsed by, or sponsored by Electronic Arts or Respawn Entertainment.
+  Independent marketplace. Not affiliated with Electronic Arts
+  or Respawn Entertainment.
 </footer>
 
 </body>
