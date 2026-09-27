@@ -15,14 +15,8 @@
     content="Browse Apex Legends accounts for sale at APEXCHEAP, including Predator accounts, Mythics, rare skins and account showcases."
 >
 
-<meta
-    name="keywords"
-    content="Apex Legends accounts, Apex accounts, Apex accounts for sale, Predator Apex account, Apex Mythics, rare Apex skins, APEXCHEAP"
->
-
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow, max-image-preview:large">
-
 <meta name="author" content="APEXCHEAP">
 <meta name="theme-color" content="#090806">
 
@@ -43,7 +37,7 @@
 
 <meta
     property="og:description"
-    content="Browse Apex Legends accounts featuring Predator ranks, Mythics, rare skins and more."
+    content="Browse Apex Legends accounts featuring Predator ranks, Mythics, rare skins and account showcases."
 >
 
 <meta property="og:type" content="website">
@@ -136,17 +130,13 @@
     --black:#080705;
     --black2:#0e0c09;
     --panel:#12100c;
-
     --paper:#e7d9bf;
     --paper2:#c8b38e;
-
     --red:#e31b0c;
     --red2:#ff321c;
     --darkred:#710a04;
-
     --orange:#ff7417;
     --gold:#ffad43;
-
     --white:#f3eadf;
     --muted:#a99d8e;
     --border:#49392b;
@@ -159,9 +149,7 @@ html{
 body{
     background:#080705;
     color:var(--white);
-
     font-family:"Oswald",Arial,sans-serif;
-
     overflow-x:hidden;
 }
 
@@ -182,53 +170,39 @@ a{
 
 header{
     height:76px;
-
     background:rgba(8,7,5,.96);
-
     border-bottom:1px solid #392b20;
-
     position:relative;
     z-index:100;
 }
 
 nav{
     height:100%;
-
     display:flex;
-
     align-items:center;
     justify-content:space-between;
 }
 
 .brand{
     display:flex;
-
     align-items:center;
-
     gap:13px;
 }
 
 .logo{
     width:52px;
     height:52px;
-
     object-fit:cover;
     object-position:center 34%;
-
     border:1px solid #8b795f;
-
     background:var(--paper);
-
     transform:rotate(-2deg);
-
     box-shadow:4px 4px 0 var(--darkred);
 }
 
 .brand-text{
     font-family:"Anton",sans-serif;
-
     font-size:21px;
-
     letter-spacing:1px;
 }
 
@@ -238,19 +212,14 @@ nav{
 
 .nav-right{
     display:flex;
-
     align-items:center;
-
     gap:27px;
 }
 
 .nav-link{
     font-size:12px;
-
     font-weight:600;
-
     letter-spacing:1.3px;
-
     color:#b5aa9c;
 }
 
@@ -265,56 +234,37 @@ nav{
 
 .btn{
     display:inline-block;
-
     position:relative;
-
     overflow:hidden;
-
     padding:14px 24px;
-
     font-size:12px;
-
     font-weight:700;
-
     letter-spacing:1px;
-
     text-transform:uppercase;
-
-    transition:
-        transform .2s,
-        box-shadow .2s;
+    transition:transform .2s,box-shadow .2s;
 }
 
 .btn-red{
-    background:
-        linear-gradient(
-            110deg,
-            #ad0c06,
-            var(--red),
-            var(--red2)
-        );
+    background:linear-gradient(
+        110deg,
+        #ad0c06,
+        var(--red),
+        var(--red2)
+    );
 
     border:1px solid #ff4b3c;
-
-    box-shadow:
-        0 8px 28px rgba(220,30,0,.23);
+    box-shadow:0 8px 28px rgba(220,30,0,.23);
 }
 
 .btn-red::after{
     content:"";
-
     position:absolute;
-
     width:35px;
     height:120px;
-
     top:-45px;
     left:-80px;
-
     background:rgba(255,255,255,.23);
-
     transform:rotate(25deg);
-
     transition:left .45s ease;
 }
 
@@ -324,14 +274,11 @@ nav{
 
 .btn-red:hover{
     transform:translateY(-3px);
-
-    box-shadow:
-        0 12px 35px rgba(255,45,10,.35);
+    box-shadow:0 12px 35px rgba(255,45,10,.35);
 }
 
 .btn-dark{
     background:#13110e;
-
     border:1px solid #5a4838;
 }
 
@@ -346,13 +293,9 @@ nav{
 
 .hero{
     min-height:690px;
-
     position:relative;
-
     overflow:hidden;
-
     display:flex;
-
     align-items:center;
 
     background:
@@ -361,37 +304,28 @@ nav{
             rgba(230,40,0,.20),
             transparent 25%
         ),
-
         radial-gradient(
             circle at 90% 60%,
             rgba(255,110,0,.12),
             transparent 28%
         ),
-
         #080705;
 }
 
 
-/* =========================
-   HERO GIF
-========================= */
+/* HERO GIF */
 
 .hero-gif{
     position:absolute;
-
     inset:0;
-
     z-index:0;
-
     overflow:hidden;
 }
 
 .hero-gif img{
     width:100%;
     height:100%;
-
     object-fit:cover;
-
     opacity:.38;
 
     filter:
@@ -402,13 +336,10 @@ nav{
 
 .hero-gif::after{
     content:"";
-
     position:absolute;
-
     inset:0;
 
     background:
-
         linear-gradient(
             90deg,
             #080705 0%,
@@ -417,7 +348,6 @@ nav{
             rgba(8,7,5,.35) 78%,
             rgba(8,7,5,.76) 100%
         ),
-
         linear-gradient(
             0deg,
             #080705 0%,
@@ -427,27 +357,17 @@ nav{
 }
 
 
-/* =========================
-   MOVING GLOW
-========================= */
+/* MOVING GLOW */
 
 .moving-glow{
     position:absolute;
-
     z-index:1;
-
     width:520px;
     height:520px;
-
     border-radius:50%;
-
-    background:
-        rgba(255,42,0,.16);
-
+    background:rgba(255,42,0,.16);
     filter:blur(100px);
-
-    animation:
-        glowTravel 7s ease-in-out infinite alternate;
+    animation:glowTravel 7s ease-in-out infinite alternate;
 }
 
 @keyframes glowTravel{
@@ -455,106 +375,72 @@ nav{
     0%{
         left:35%;
         top:-150px;
-
         transform:scale(.8);
     }
 
     100%{
         left:72%;
         top:210px;
-
         transform:scale(1.2);
     }
 
 }
 
 
-/* =========================
-   HERO CONTENT
-========================= */
+/* HERO CONTENT */
 
 .hero .container{
     position:relative;
-
     z-index:10;
 }
 
 .hero-content{
     width:68%;
-
     padding:90px 0;
-
-    animation:
-        heroEnter .85s ease-out both;
+    animation:heroEnter .85s ease-out both;
 }
 
 @keyframes heroEnter{
 
     from{
         opacity:0;
-
-        transform:
-            translateY(35px);
+        transform:translateY(35px);
     }
 
     to{
         opacity:1;
-
-        transform:
-            translateY(0);
+        transform:translateY(0);
     }
 
 }
 
 .paper-label{
     display:inline-block;
-
     background:var(--paper);
-
     color:#17110d;
-
     padding:8px 17px;
-
     font-size:11px;
-
     font-weight:700;
-
     letter-spacing:2px;
-
-    transform:
-        rotate(-1.5deg);
-
-    box-shadow:
-        6px 6px 0 var(--darkred);
-
+    transform:rotate(-1.5deg);
+    box-shadow:6px 6px 0 var(--darkred);
     margin-bottom:27px;
 }
 
 .hero h1{
     font-family:"Anton",sans-serif;
-
-    font-size:
-        clamp(65px,8vw,108px);
-
+    font-size:clamp(65px,8vw,108px);
     line-height:.84;
-
     font-weight:400;
-
     text-transform:uppercase;
-
-    text-shadow:
-        0 14px 35px #000;
+    text-shadow:0 14px 35px #000;
 }
 
 .hero h1 span{
     display:inline-block;
-
     color:var(--red2);
-
     margin-top:13px;
-
-    transform:
-        skewX(-3deg);
+    transform:skewX(-3deg);
 
     text-shadow:
         4px 4px 0 #650a05,
@@ -562,52 +448,35 @@ nav{
 }
 
 
-/* =========================
-   PAINT LINE
-========================= */
+/* PAINT */
 
 .paint{
     width:min(470px,80%);
-
     height:12px;
+    margin:30px 0 25px;
 
-    margin:
-        30px 0 25px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--red) 7%,
+        var(--red2) 78%,
+        transparent
+    );
 
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            var(--red) 7%,
-            var(--red2) 78%,
-            transparent
-        );
-
-    transform:
-        skewX(-35deg)
-        rotate(-1deg);
-
+    transform:skewX(-35deg) rotate(-1deg);
     position:relative;
-
-    animation:
-        paintPulse 2.8s ease-in-out infinite alternate;
+    animation:paintPulse 2.8s ease-in-out infinite alternate;
 }
 
 .paint::after{
     content:"";
-
     position:absolute;
-
     width:130px;
     height:4px;
-
     right:-90px;
     bottom:-8px;
-
     background:var(--orange);
-
-    box-shadow:
-        0 0 16px rgba(255,110,20,.6);
+    box-shadow:0 0 16px rgba(255,110,20,.6);
 }
 
 @keyframes paintPulse{
@@ -624,11 +493,8 @@ nav{
 
 .hero-copy{
     max-width:590px;
-
     color:#b9ad9e;
-
     font-size:17px;
-
     line-height:1.65;
 }
 
@@ -638,11 +504,8 @@ nav{
 
 .hero-buttons{
     display:flex;
-
     gap:12px;
-
     flex-wrap:wrap;
-
     margin-top:31px;
 }
 
@@ -653,105 +516,78 @@ nav{
 
 .embers{
     position:absolute;
-
     inset:0;
-
     z-index:7;
-
     pointer-events:none;
-
     overflow:hidden;
 }
 
 .ember{
     position:absolute;
-
     bottom:-20px;
-
     width:5px;
     height:5px;
-
     background:#ffad45;
-
     border-radius:50%;
 
     box-shadow:
         0 0 8px #ff3b00,
         0 0 18px #ff7100;
 
-    animation:
-        rise linear infinite;
+    animation:rise linear infinite;
 }
 
 .ember:nth-child(1){
     left:7%;
-
     animation-duration:6s;
 }
 
 .ember:nth-child(2){
     left:17%;
-
     animation-duration:9s;
-
     animation-delay:-4s;
 }
 
 .ember:nth-child(3){
     left:29%;
-
     animation-duration:7s;
-
     animation-delay:-2s;
 }
 
 .ember:nth-child(4){
     left:41%;
-
     animation-duration:10s;
-
     animation-delay:-7s;
 }
 
 .ember:nth-child(5){
     left:55%;
-
     animation-duration:8s;
-
     animation-delay:-5s;
 }
 
 .ember:nth-child(6){
     left:68%;
-
     animation-duration:6.5s;
-
     animation-delay:-3s;
 }
 
 .ember:nth-child(7){
     left:81%;
-
     animation-duration:9.5s;
-
     animation-delay:-7s;
 }
 
 .ember:nth-child(8){
     left:93%;
-
     animation-duration:7.5s;
-
     animation-delay:-4s;
 }
 
 @keyframes rise{
 
     0%{
-        transform:
-            translate(0,0)
-            scale(.4);
-
+        transform:translate(0,0) scale(.4);
         opacity:0;
     }
 
@@ -760,10 +596,7 @@ nav{
     }
 
     100%{
-        transform:
-            translate(90px,-760px)
-            scale(1.3);
-
+        transform:translate(90px,-760px) scale(1.3);
         opacity:0;
     }
 
@@ -776,68 +609,50 @@ nav{
 
 .sparks{
     position:absolute;
-
     inset:0;
-
     z-index:8;
-
     overflow:hidden;
-
     pointer-events:none;
 }
 
 .spark{
     position:absolute;
-
     width:80px;
     height:2px;
 
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            #ffba55,
-            #ff3a0a
-        );
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #ffba55,
+        #ff3a0a
+    );
 
     opacity:0;
-
-    transform:
-        rotate(-25deg);
-
-    animation:
-        sparkShoot 4s linear infinite;
+    transform:rotate(-25deg);
+    animation:sparkShoot 4s linear infinite;
 }
 
 .spark:nth-child(1){
     top:24%;
-
     left:-100px;
 }
 
 .spark:nth-child(2){
     top:57%;
-
     left:-100px;
-
     animation-delay:1.3s;
 }
 
 .spark:nth-child(3){
     top:78%;
-
     left:-100px;
-
     animation-delay:2.6s;
 }
 
 @keyframes sparkShoot{
 
     0%{
-        transform:
-            translateX(0)
-            rotate(-25deg);
-
+        transform:translateX(0) rotate(-25deg);
         opacity:0;
     }
 
@@ -850,10 +665,7 @@ nav{
     }
 
     100%{
-        transform:
-            translateX(1500px)
-            rotate(-25deg);
-
+        transform:translateX(1500px) rotate(-25deg);
         opacity:0;
     }
 
@@ -866,79 +678,51 @@ nav{
 
 .ticker{
     width:100%;
-
     position:relative;
-
     z-index:30;
-
     overflow:hidden;
-
     background:var(--paper);
-
-    border-top:
-        4px solid #17110d;
-
-    border-bottom:
-        4px solid #17110d;
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.45);
-
-    transform:
-        rotate(-.45deg);
+    border-top:4px solid #17110d;
+    border-bottom:4px solid #17110d;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    transform:rotate(-.45deg);
 }
 
 .ticker-track{
     display:flex;
-
     width:max-content;
-
     will-change:transform;
-
-    animation:
-        tickerMove 16s linear infinite;
+    animation:tickerMove 16s linear infinite;
 }
 
 .ticker-group{
     display:flex;
-
     flex-shrink:0;
 }
 
 .ticker-item{
     flex-shrink:0;
-
-    padding:
-        14px 31px;
-
+    padding:14px 31px;
     color:#17110d;
-
-    font-family:
-        "Anton",sans-serif;
-
+    font-family:"Anton",sans-serif;
     font-size:16px;
-
     letter-spacing:1.3px;
-
     white-space:nowrap;
 }
 
 .ticker-item b{
     color:var(--red);
-
     margin-right:25px;
 }
 
 @keyframes tickerMove{
 
     from{
-        transform:
-            translateX(0);
+        transform:translateX(0);
     }
 
     to{
-        transform:
-            translateX(-50%);
+        transform:translateX(-50%);
     }
 
 }
@@ -950,54 +734,37 @@ nav{
 
 .store{
     position:relative;
-
-    padding:
-        105px 0 115px;
+    padding:105px 0 115px;
 
     background:
-
         radial-gradient(
             circle at 80% 35%,
             rgba(190,35,0,.09),
             transparent 25%
         ),
-
         #080705;
 }
 
 .section-head{
     display:flex;
-
     justify-content:space-between;
-
     align-items:flex-end;
-
     gap:30px;
-
     margin-bottom:38px;
 }
 
 .kicker{
     color:var(--orange);
-
     font-size:11px;
-
     font-weight:700;
-
     letter-spacing:2.5px;
-
     margin-bottom:9px;
 }
 
 .section-head h2{
-    font-family:
-        "Anton",sans-serif;
-
-    font-size:
-        clamp(44px,6vw,70px);
-
+    font-family:"Anton",sans-serif;
+    font-size:clamp(44px,6vw,70px);
     line-height:.9;
-
     font-weight:400;
 }
 
@@ -1007,29 +774,19 @@ nav{
 
 .online{
     color:#c2b5a4;
-
     font-size:12px;
-
     letter-spacing:1.3px;
-
     margin-bottom:5px;
 }
 
 .online::before{
     content:"";
-
     display:inline-block;
-
     width:7px;
     height:7px;
-
     border-radius:50%;
-
     background:#59db7b;
-
-    box-shadow:
-        0 0 12px #59db7b;
-
+    box-shadow:0 0 12px #59db7b;
     margin-right:9px;
 }
 
@@ -1040,86 +797,55 @@ nav{
 
 .store-card{
     display:grid;
-
-    grid-template-columns:
-        360px 1fr;
-
+    grid-template-columns:360px 1fr;
     min-height:420px;
-
     position:relative;
-
     overflow:hidden;
-
     background:#0e0c09;
-
-    border:
-        1px solid #4c3a2b;
-
-    box-shadow:
-        0 30px 80px rgba(0,0,0,.45);
+    border:1px solid #4c3a2b;
+    box-shadow:0 30px 80px rgba(0,0,0,.45);
 }
 
 .store-card::before{
     content:"";
-
     position:absolute;
-
     left:0;
     top:0;
-
     width:6px;
     height:100%;
-
     z-index:20;
 
-    background:
-        linear-gradient(
-            var(--red2),
-            var(--orange),
-            var(--red)
-        );
+    background:linear-gradient(
+        var(--red2),
+        var(--orange),
+        var(--red)
+    );
 
-    box-shadow:
-        0 0 20px rgba(255,65,10,.4);
+    box-shadow:0 0 20px rgba(255,65,10,.4);
 }
 
 .store-copy{
-    padding:
-        48px 38px 48px 46px;
-
+    padding:48px 38px 48px 46px;
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     position:relative;
-
     z-index:5;
 }
 
 .store-copy small{
     color:var(--orange);
-
     font-size:11px;
-
     font-weight:700;
-
     letter-spacing:2px;
-
     margin-bottom:13px;
 }
 
 .store-copy h3{
-    font-family:
-        "Anton",sans-serif;
-
+    font-family:"Anton",sans-serif;
     font-size:44px;
-
     line-height:.95;
-
     font-weight:400;
-
     margin-bottom:20px;
 }
 
@@ -1129,11 +855,8 @@ nav{
 
 .store-copy p{
     color:#a99d8e;
-
     font-size:15px;
-
     line-height:1.65;
-
     margin-bottom:27px;
 }
 
@@ -1144,84 +867,54 @@ nav{
 
 .showcase{
     min-width:0;
-
     position:relative;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     overflow:hidden;
-
     padding:24px;
 
     background:
-
         radial-gradient(
             circle,
             rgba(255,100,15,.16),
             transparent 55%
         ),
-
         #0a0907;
 }
 
 .showcase::before{
     content:"";
-
     position:absolute;
-
     width:500px;
     height:500px;
-
-    background:
-        rgba(230,30,0,.12);
-
+    background:rgba(230,30,0,.12);
     border-radius:50%;
-
-    filter:
-        blur(90px);
-
-    animation:
-        showcaseGlow 4s ease-in-out infinite alternate;
+    filter:blur(90px);
+    animation:showcaseGlow 4s ease-in-out infinite alternate;
 }
 
 @keyframes showcaseGlow{
 
     from{
-        transform:
-            translateX(-100px)
-            scale(.8);
+        transform:translateX(-100px) scale(.8);
     }
 
     to{
-        transform:
-            translateX(120px)
-            scale(1.15);
+        transform:translateX(120px) scale(1.15);
     }
 
 }
 
 .showcase img{
     display:block;
-
     position:relative;
-
     z-index:5;
-
     width:100%;
-
     max-width:760px;
-
     max-height:370px;
-
     object-fit:contain;
-
-    border:
-        1px solid #72553c;
-
+    border:1px solid #72553c;
     background:#080705;
 
     box-shadow:
@@ -1231,18 +924,13 @@ nav{
 
 .gif-error{
     display:none;
-
     position:relative;
-
     z-index:5;
-
     text-align:center;
 }
 
 .gif-error strong{
-    font-family:
-        "Anton",sans-serif;
-
+    font-family:"Anton",sans-serif;
     font-size:50px;
 }
 
@@ -1252,93 +940,216 @@ nav{
 
 .gif-error p{
     margin-top:8px;
-
     color:#8f8273;
-
     letter-spacing:2px;
 }
 
 
 /* =========================
-   SEO CONTENT SECTION
+   APEX COLLECTION
 ========================= */
 
 .about{
-    padding:
-        95px 0;
-
     position:relative;
-
     overflow:hidden;
+    padding:105px 0 115px;
 
-    background:#0d0b08;
+    background:
+        radial-gradient(
+            circle at 15% 40%,
+            rgba(210,25,0,.13),
+            transparent 26%
+        ),
+        radial-gradient(
+            circle at 85% 65%,
+            rgba(255,105,15,.08),
+            transparent 25%
+        ),
+        #0b0907;
 
-    border-top:
-        1px solid #382b20;
+    border-top:1px solid #382b20;
 }
 
 .about::before{
     content:"";
-
     position:absolute;
-
-    width:500px;
-    height:500px;
-
-    right:-250px;
+    width:650px;
+    height:650px;
+    left:-400px;
     top:-250px;
-
-    background:
-        rgba(220,30,0,.09);
-
     border-radius:50%;
-
-    filter:
-        blur(70px);
+    background:rgba(255,45,5,.08);
+    filter:blur(90px);
+    pointer-events:none;
 }
 
-.about-content{
-    max-width:850px;
-
+.about-head{
     position:relative;
-
     z-index:2;
+    max-width:850px;
+    margin-bottom:48px;
 }
 
-.about .kicker{
-    margin-bottom:12px;
-}
-
-.about h2{
-    font-family:
-        "Anton",sans-serif;
-
-    font-size:
-        clamp(40px,5vw,62px);
-
-    line-height:.95;
-
+.about-head h2{
+    font-family:"Anton",sans-serif;
+    font-size:clamp(48px,7vw,82px);
+    line-height:.9;
     font-weight:400;
-
-    margin-bottom:25px;
+    text-transform:uppercase;
+    margin-top:10px;
 }
 
-.about h2 span{
+.about-head h2 span{
     color:var(--red2);
+
+    text-shadow:
+        3px 3px 0 #610904,
+        0 0 30px rgba(255,45,10,.15);
 }
 
-.about p{
-    max-width:780px;
+.about-line{
+    width:230px;
+    height:7px;
+    margin-top:24px;
 
-    color:#a99d8e;
+    background:linear-gradient(
+        90deg,
+        var(--red2),
+        var(--orange),
+        transparent
+    );
 
-    font-size:16px;
-
-    line-height:1.8;
+    transform:skewX(-30deg);
 }
 
-.about p + p{
-    margin-top:16px;
+.apex-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    position:relative;
+    z-index:3;
+}
+
+.apex-card{
+    min-height:245px;
+    position:relative;
+    overflow:hidden;
+    padding:32px 29px;
+
+    background:linear-gradient(
+        145deg,
+        rgba(30,25,19,.97),
+        rgba(12,10,8,.98)
+    );
+
+    border:1px solid #4b392b;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.apex-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:100%;
+
+    background:linear-gradient(
+        var(--red2),
+        var(--orange),
+        var(--darkred)
+    );
+}
+
+.apex-card::after{
+    content:"";
+    position:absolute;
+    width:170px;
+    height:170px;
+    right:-90px;
+    bottom:-100px;
+    border-radius:50%;
+    background:rgba(255,55,5,.12);
+    filter:blur(25px);
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+}
+
+.apex-card:hover{
+    transform:translateY(-7px);
+    border-color:#86563b;
+
+    box-shadow:
+        0 22px 50px rgba(0,0,0,.45),
+        0 0 30px rgba(220,40,0,.08);
+}
+
+.apex-card:hover::after{
+    transform:scale(1.5);
+    opacity:1;
+}
+
+.card-number{
+    color:#705f50;
+    font-family:"Anton",sans-serif;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:42px;
+}
+
+.apex-card h3{
+    position:relative;
+    z-index:2;
+    font-family:"Anton",sans-serif;
+    font-size:36px;
+    line-height:1;
+    font-weight:400;
+    letter-spacing:.5px;
+    margin-bottom:15px;
+}
+
+.apex-card:nth-child(1) h3{
+    color:#ff3b27;
+}
+
+.apex-card:nth-child(2) h3{
+    color:#ff8b24;
+}
+
+.apex-card:nth-child(3) h3{
+    color:#e9d7b8;
+}
+
+.apex-card p{
+    position:relative;
+    z-index:2;
+    max-width:250px;
+    color:#968a7d;
+    font-size:14px;
+    line-height:1.65;
+}
+
+.about-search-copy{
+    position:relative;
+    z-index:2;
+    max-width:760px;
+    margin-top:38px;
+    padding-left:18px;
+    border-left:2px solid var(--red);
+    color:#918578;
+    font-size:15px;
+    line-height:1.7;
+}
+
+.about-search-copy strong{
+    color:#d6c8b6;
+    font-weight:500;
 }
 
 
@@ -1348,60 +1159,35 @@ nav{
 
 .cta{
     position:relative;
-
     overflow:hidden;
-
-    padding:
-        100px 0;
-
+    padding:100px 0;
     text-align:center;
-
-    border-top:
-        1px solid #382b20;
-
+    border-top:1px solid #382b20;
     background:#090806;
 }
 
 .cta::before{
     content:"AC";
-
     position:absolute;
-
     left:50%;
     top:50%;
-
-    transform:
-        translate(-50%,-50%)
-        rotate(-7deg);
-
-    font-family:
-        "Anton",sans-serif;
-
+    transform:translate(-50%,-50%) rotate(-7deg);
+    font-family:"Anton",sans-serif;
     font-size:340px;
-
-    color:
-        rgba(255,255,255,.025);
+    color:rgba(255,255,255,.025);
 }
 
 .cta-content{
     position:relative;
-
     z-index:5;
 }
 
 .cta h2{
-    font-family:
-        "Anton",sans-serif;
-
-    font-size:
-        clamp(45px,6vw,70px);
-
+    font-family:"Anton",sans-serif;
+    font-size:clamp(45px,6vw,70px);
     font-weight:400;
-
     line-height:.95;
-
-    margin:
-        25px 0 18px;
+    margin:25px 0 18px;
 }
 
 .cta h2 span{
@@ -1410,9 +1196,7 @@ nav{
 
 .cta p{
     color:#a99d8e;
-
     margin-bottom:28px;
-
     font-size:15px;
 }
 
@@ -1422,20 +1206,12 @@ nav{
 ========================= */
 
 footer{
-    padding:
-        30px 20px;
-
+    padding:30px 20px;
     text-align:center;
-
-    border-top:
-        1px solid #382b20;
-
+    border-top:1px solid #382b20;
     color:#74695e;
-
     font-size:11px;
-
     letter-spacing:.7px;
-
     line-height:1.8;
 }
 
@@ -1447,8 +1223,7 @@ footer{
 @media(max-width:800px){
 
     .container{
-        width:
-            calc(100% - 24px);
+        width:calc(100% - 24px);
     }
 
     header{
@@ -1473,9 +1248,7 @@ footer{
     }
 
     .nav-right .btn{
-        padding:
-            10px 13px;
-
+        padding:10px 13px;
         font-size:10px;
     }
 
@@ -1485,9 +1258,7 @@ footer{
 
     .hero-content{
         width:100%;
-
-        padding:
-            70px 0;
+        padding:70px 0;
     }
 
     .hero-gif img{
@@ -1496,13 +1267,11 @@ footer{
 
     .hero-gif::after{
         background:
-
             linear-gradient(
                 90deg,
                 rgba(8,7,5,.94),
                 rgba(8,7,5,.58)
             ),
-
             linear-gradient(
                 0deg,
                 #080705,
@@ -1519,18 +1288,15 @@ footer{
     }
 
     .store{
-        padding:
-            75px 0 80px;
+        padding:75px 0 80px;
     }
 
     .store-card{
-        grid-template-columns:
-            1fr;
+        grid-template-columns:1fr;
     }
 
     .store-copy{
-        padding:
-            38px 27px;
+        padding:38px 27px;
     }
 
     .store-copy h3{
@@ -1539,7 +1305,6 @@ footer{
 
     .showcase{
         min-height:260px;
-
         padding:14px;
     }
 
@@ -1549,14 +1314,27 @@ footer{
 
     .ticker-item{
         font-size:14px;
-
-        padding:
-            12px 22px;
+        padding:12px 22px;
     }
 
     .about{
-        padding:
-            70px 0;
+        padding:75px 0 85px;
+    }
+
+    .about-head{
+        margin-bottom:32px;
+    }
+
+    .apex-grid{
+        grid-template-columns:1fr;
+    }
+
+    .apex-card{
+        min-height:190px;
+    }
+
+    .card-number{
+        margin-bottom:27px;
     }
 
 }
@@ -1567,6 +1345,10 @@ footer{
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -1634,7 +1416,7 @@ footer{
 <div class="hero-gif">
 
     <img
-        src="./showcase%20(3).gif?v=50"
+        src="./showcase%20(3).gif?v=60"
         alt=""
         aria-hidden="true"
     >
@@ -1718,9 +1500,7 @@ footer{
         href="#accounts"
         class="btn btn-red"
     >
-
         BROWSE ACCOUNTS
-
     </a>
 
 
@@ -1730,9 +1510,7 @@ footer{
         rel="noopener noreferrer"
         class="btn btn-dark"
     >
-
         JOIN DISCORD
-
     </a>
 
 </div>
@@ -1891,9 +1669,7 @@ footer{
     rel="noopener noreferrer"
     class="btn btn-red"
 >
-
     VIEW DISCORD SHOP →
-
 </a>
 
 </div>
@@ -1907,7 +1683,7 @@ footer{
 
 
 <img
-    src="./showcase%20(3).gif?v=50"
+    src="./showcase%20(3).gif?v=60"
 
     alt="APEXCHEAP Apex Legends account showcase"
 
@@ -1932,9 +1708,7 @@ footer{
 
 
 <p>
-
     ACCOUNT SHOWCASE
-
 </p>
 
 
@@ -1954,65 +1728,152 @@ footer{
 
 
 <!-- =========================
-     SEARCH CONTENT
+     APEX COLLECTION
 ========================= -->
 
 <section
     class="about"
-    aria-labelledby="about-title"
+    aria-labelledby="collection-title"
 >
 
 
 <div class="container">
 
 
-<div class="about-content">
+<div class="about-head">
 
 
 <div class="kicker">
 
-    APEXCHEAP MARKETPLACE
+    THE COLLECTION
 
 </div>
 
 
-<h2 id="about-title">
+<h2 id="collection-title">
 
-    APEX LEGENDS
+    BUILT FOR APEX.
+
+    <br>
 
     <span>
-        ACCOUNT MARKETPLACE
+        MADE FOR COLLECTORS.
     </span>
 
 </h2>
 
 
-<p>
-
-    APEXCHEAP is an independent marketplace
-    for browsing Apex Legends accounts.
-    Listings can feature account details such
-    as rank, level, Mythics, rare skins and
-    other collection information so buyers
-    can compare available accounts.
-
-</p>
-
-
-<p>
-
-    The marketplace includes Apex accounts
-    featuring competitive ranks such as
-    Predator alongside accounts built around
-    cosmetics, Mythics and rare skins.
-    Current listings and account showcases
-    are available through the APEXCHEAP
-    Discord shop.
-
-</p>
+<div class="about-line"></div>
 
 
 </div>
+
+
+
+<div class="apex-grid">
+
+
+<article class="apex-card">
+
+
+<div class="card-number">
+
+    01 / RANK
+
+</div>
+
+
+<h3>
+
+    PREDATOR
+
+</h3>
+
+
+<p>
+
+    Accounts featuring competitive
+    ranks and ranked history.
+
+</p>
+
+
+</article>
+
+
+
+<article class="apex-card">
+
+
+<div class="card-number">
+
+    02 / COLLECTION
+
+</div>
+
+
+<h3>
+
+    MYTHICS
+
+</h3>
+
+
+<p>
+
+    Accounts featuring Heirlooms,
+    Prestige skins and Mythic collections.
+
+</p>
+
+
+</article>
+
+
+
+<article class="apex-card">
+
+
+<div class="card-number">
+
+    03 / COSMETICS
+
+</div>
+
+
+<h3>
+
+    RARE SKINS
+
+</h3>
+
+
+<p>
+
+    Accounts built around older,
+    limited and harder-to-find cosmetics.
+
+</p>
+
+
+</article>
+
+
+</div>
+
+
+
+<p class="about-search-copy">
+
+    <strong>
+        Browse Apex Legends accounts
+    </strong>
+
+    featuring competitive ranks,
+    Mythics, rare cosmetics and
+    detailed account showcases through APEXCHEAP.
+
+</p>
 
 
 </div>
